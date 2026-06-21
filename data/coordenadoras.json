@@ -1,0 +1,152 @@
+[
+    {
+        "id": "consistent",
+        "nome": "Consistent",
+        "coordenacao_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/01_CONSISTENT.png",
+        "coordenadora": "Giovanna Coltrin",
+        "coordenadora_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/02_COLTRIN.png",
+        "supervisaoId": "pure",
+        "lideres": [
+            "Maiza Aimy",
+            "Bianca Tavares",
+            "Yasmim Lemes"
+        ]
+    },
+    {
+        "id": "fearless",
+        "nome": "Fearless",
+        "coordenacao_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/01_FEARLESS.png",
+        "coordenadora": "Kathllen Letícia",
+        "coordenadora_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/02_KATH.png",
+        "supervisaoId": "pure",
+        "lideres": [
+            "Giovana Borges",
+            "Giovanna",
+            "Julia Apse"
+        ]
+    },
+    {
+        "id": "wise",
+        "nome": "Wise",
+        "coordenacao_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/01_WISE.png",
+        "coordenadora": "Letícia Santos",
+        "coordenadora_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/02_LETICIA.SANTOS.png",
+        "supervisaoId": "pure",
+        "lideres": [
+            "Júlia Morotti",
+            "Luara",
+            "Vithoria",
+            "Maria Luiza",
+            "Maria Eduarda",
+            "Ana Carolina Brisolla"
+        ]
+    },
+    {
+        "id": "bloom",
+        "nome": "Bloom",
+        "coordenacao_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/01_BLOOM.png",
+        "coordenadora": "Ainoã Schulz",
+        "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/02_AINOA.png",
+        "supervisaoId": "compass",
+        "lideres": [
+            "Ana Beatriz Corilow",
+            "Anna Luiza Venâncio",
+            "Ester Santos",
+            "Fernanda Campos",
+            "⁠Iasmin Ferreira"
+        ]
+    },
+    {
+        "id": "glow",
+        "nome": "Glow",
+        "coordenacao_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/01_GLOW.png",
+        "coordenadora": "Isadora",
+        "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/02_ISADORA.png",
+        "supervisaoId": "compass",
+        "lideres": [
+            "blablabla"
+        ]
+    },
+    {
+        "id": "hope",
+        "nome": "Hope",
+        "coordenacao_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/01_HOPE.png",
+        "coordenadora": "Maria Eduarda Cursino",
+        "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/02_DUDA.png",
+        "supervisaoId": "compass",
+        "lideres": [
+            "Marina Duque",
+            "Ester",
+            "Kamily Bedim"
+        ]
+    },
+    {
+        "id": "north",
+        "nome": "North",
+        "coordenacao_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/01_NORTH.png",
+        "coordenadora": "Victória Pivato",
+        "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/02_VICTORIA.png",
+        "supervisaoId": "compass",
+        "lideres": [
+            "Arielly Santos",
+            "Rebeca Galvez",
+            "Maísa Costa"
+        ]
+    },
+    {
+        "id": "thrive",
+        "nome": "Thrive",
+        "coordenacao_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/01_THRIVE.png",
+        "coordenadora": "Nicole Balestra",
+        "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/02_BALESTRA.png",
+        "supervisaoId": "compass",
+        "lideres": [
+            "Beatriz Munhoes",
+            "Beatriz Araújo",
+            "Sofie Moreira",
+            "Maísa Almeida",
+            "Rafaela Geara"
+        ]
+    },
+    {
+        "id": "aviv",
+        "nome": "Aviv",
+        "coordenacao_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/01_AVIV.png",
+        "coordenadora": "Giselle Mineiro",
+        "coordenadora_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/02_TIA.GI.png",
+        "supervisaoId": "rooted",
+        "lideres": [
+            "Rhaissa",
+            "Hadassa",
+            "Thauany",
+            "Ana Vitoria",
+            "Michele",
+            "Viviane Soleo"
+        ]
+    },
+    {
+        "id": "joyfulness",
+        "nome": "Joyfulness",
+        "coordenacao_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/01_JOYFULNESS.png",
+        "coordenadora": "Bianca Ragazzi",
+        "coordenadora_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/02_BIANCA.png",
+        "supervisaoId": "rooted",
+        "lideres": [
+            "Larissa Freitas",
+            "⁠Rafaela Lima",
+            "⁠Maria Eduarda Quintans",
+            "Manuela Dutra"
+        ]
+    },
+    {
+        "id": "bright",
+        "nome": "Bright",
+        "coordenacao_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/01_BRIGHT.png",
+        "coordenadora": "Larissa Loren",
+        "coordenadora_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/02_LOREN.png",
+        "supervisaoId": "rooted",
+        "lideres": [
+            "blablabla"
+        ]
+    }
+]
