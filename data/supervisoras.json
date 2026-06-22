@@ -6,7 +6,9 @@
     "simbolo": "Pomba, rosa e fogo",
     "base_biblica": "O teu povo é o meu povo, e o teu Deus é o meu Deus (Rute 1:16)",
     "personagem_biblica": "Rute — símbolo de pureza, humildade e obediência ao propósito divino.",
-    "supervisora": "Kathllen Letícia"
+    "supervisora": "Kathllen Letícia",
+    "supervisora_foto": "https://static/imagens/SUPER_PURE_KAT/KATH.png",
+    "logo": "https://static/imagens/SUPER_PURE_KAT/PURE.png"
   },
   {
     "id": "compass",
@@ -15,15 +17,19 @@
     "simbolo": "Bússola",
     "base_biblica": "O coração do homem traça o seu caminho, mas o Senhor lhe dirige os passos. (Provérbios 16:9)",
     "personagem_biblica": "Noemi — mesmo após perdas, guiou Rute de volta a Belém, sendo instrumento de direção no plano de Deus.",
-    "supervisora": "Juliana Prado"
+    "supervisora": "Juliana Prado",
+    "supervisora_foto": "https://static/imagens/SUPER_COMPASS_JU/JU.png",
+    "logo": "https://static/imagens/SUPER_COMPASS_JU/COMPASS.png"
   },
   {
-    "id": "lalala",
-    "nome": "lalala",
+    "id": "rooted",
+    "nome": "Rooted",
     "significado": "lalala",
     "simbolo": "lalala",
     "base_biblica": "lalala",
     "personagem_biblica": "lalala",
-    "supervisora": "Evelyn Machado"
+    "supervisora": "Evelyn Machado",
+    "supervisora_foto": "https://static/imagens/SUPER_ROOTED_EVE/EVELYN.png",
+    "logo": "https://static/imagens/SUPER_ROOTED_EVE/ROOTED.png"
   }
 ]

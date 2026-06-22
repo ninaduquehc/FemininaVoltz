@@ -7,9 +7,18 @@
         "coordenadora_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/02_COLTRIN.png",
         "supervisaoId": "pure",
         "lideres": [
-            "Maiza Aimy",
-            "Bianca Tavares",
-            "Yasmim Lemes"
+            {
+                "nome": "Maiza Aimy",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/maiza.png"
+            },
+            {
+                "nome": "Bianca Tavares",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/biancatavares.png"
+            },
+            {
+                "nome": "Yasmim Lemes",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/yasmim.lemes.png"
+            }
         ]
     },
     {
@@ -20,9 +29,18 @@
         "coordenadora_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/02_KATH.png",
         "supervisaoId": "pure",
         "lideres": [
-            "Giovana Borges",
-            "Giovanna",
-            "Julia Apse"
+            {
+                "nome": "Giovana Borges",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/gi.borges.png"
+            },
+            {
+                "nome": "Giovanna",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/giovanna.png"
+            },
+            {
+                "nome": "Julia Apse",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/julia.apse.png"
+            }
         ]
     },
     {
@@ -33,12 +51,30 @@
         "coordenadora_foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/02_LETICIA.SANTOS.png",
         "supervisaoId": "pure",
         "lideres": [
-            "Júlia Morotti",
-            "Luara",
-            "Vithoria",
-            "Maria Luiza",
-            "Maria Eduarda",
-            "Ana Carolina Brisolla"
+            {
+                "nome": "Júlia Morotti",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/morotti.png"
+            },
+            {
+                "nome": "Luara",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/luara.png"
+            },
+            {
+                "nome": "Vithoria",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/vithoria.png"
+            },
+            {
+                "nome": "Maria Luiza",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.luiza.png"
+            },
+            {
+                "nome": "Maria Eduarda",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.eduarda.azevedo.png"
+            },
+            {
+                "nome": "Ana Carolina Brisolla",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/brisolla.png"
+            }
         ]
     },
     {
@@ -49,11 +85,26 @@
         "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/02_AINOA.png",
         "supervisaoId": "compass",
         "lideres": [
-            "Ana Beatriz Corilow",
-            "Anna Luiza Venâncio",
-            "Ester Santos",
-            "Fernanda Campos",
-            "⁠Iasmin Ferreira"
+            {
+                "nome": "Ana Beatriz Corilow",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/corilow.png"
+            },
+            {
+                "nome": "Anna Luiza Venâncio",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/anna.oliveira.venancio.png"
+            },
+            {
+                "nome": "Ester Santos",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/ester.ragi.santos.png"
+            },
+            {
+                "nome": "Fernanda Campos",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/nanda.png"
+            },
+            {
+                "nome": "⁠Iasmin Ferreira",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/iasmin.pereira.png"
+            }
         ]
     },
     {
@@ -64,7 +115,18 @@
         "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/02_ISADORA.png",
         "supervisaoId": "compass",
         "lideres": [
-            "blablabla"
+            {
+                "nome": "Leticia Chaves",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/leticia.chaves.png"
+            },
+            {
+                "nome": "Sophia",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/sophia.png"
+            },
+            {
+                "nome": "Lara Anacleto",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/lara.anacleto.png"
+            }
         ]
     },
     {
@@ -75,9 +137,18 @@
         "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/02_DUDA.png",
         "supervisaoId": "compass",
         "lideres": [
-            "Marina Duque",
-            "Ester",
-            "Kamily Bedim"
+            {
+                "nome": "Marina Duque",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/marina.png"
+            },
+            {
+                "nome": "Ester",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/ester.png"
+            },
+            {
+                "nome": "Kamily Bedim",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/kamily.png"
+            }
         ]
     },
     {
@@ -88,9 +159,18 @@
         "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/02_VICTORIA.png",
         "supervisaoId": "compass",
         "lideres": [
-            "Arielly Santos",
-            "Rebeca Galvez",
-            "Maísa Costa"
+            {
+                "nome": "Arielly Santos",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/arielly.png"
+            },
+            {
+                "nome": "Rebeca Galvez",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/rebeca.galvez.png"
+            },
+            {
+                "nome": "Maísa Costa",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/maisa.costa.png"
+            }
         ]
     },
     {
@@ -101,11 +181,26 @@
         "coordenadora_foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/02_BALESTRA.png",
         "supervisaoId": "compass",
         "lideres": [
-            "Beatriz Munhoes",
-            "Beatriz Araújo",
-            "Sofie Moreira",
-            "Maísa Almeida",
-            "Rafaela Geara"
+            {
+                "nome": "Beatriz Munhoes",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/beatriz.munhoes.png"
+            },
+            {
+                "nome": "Beatriz Araújo",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/beatriz.araujo.png"
+            },
+            {
+                "nome": "Sofie Moreira",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/sofie.png"
+            },
+            {
+                "nome": "Maísa Almeida",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/maisa.almeida.png"
+            },
+            {
+                "nome": "Rafaela Geara",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/geara.png"
+            }
         ]
     },
     {
