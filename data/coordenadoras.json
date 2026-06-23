@@ -34,8 +34,8 @@
                 "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/giovana.borges.png"
             },
             {
-                "nome": "Giovanna",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/giovanna.png"
+                "nome": "Giovanna Ferreira",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/giovanna.ferreira.png"
             },
             {
                 "nome": "Julia Apse",
@@ -56,16 +56,16 @@
                 "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/julia.morotti.png"
             },
             {
-                "nome": "Luara",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/luara.png"
+                "nome": "Luara Duarte",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/luara.duarte.png"
             },
             {
-                "nome": "Vithoria",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/vithoria.png"
+                "nome": "Vithoria Areda",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/vithoria.areda.png"
             },
             {
-                "nome": "Maria Luiza",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.luiza.png"
+                "nome": "Maria Luiza de Jesus",
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.luiza.de.jesus.png"
             },
             {
                 "nome": "Maria Eduarda Azevedo",
@@ -142,8 +142,8 @@
                 "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/marina.duque.png"
             },
             {
-                "nome": "Ester",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/ester.png"
+                "nome": "Ester Araújo dos Santos",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/ester.araujo.dos.santos.png"
             },
             {
                 "nome": "Kamily Bedim",
@@ -212,28 +212,28 @@
         "supervisaoId": "rooted",
         "lideres": [
             {
-                "nome": "Rhaissa",
-                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/rhaissa.png"
+                "nome": "Rhaissa Vitória Paiva",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/rhaissa.vitoria.paivapng"
             },
             {
-                "nome": "Hadassa",
-                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/hadassa.png"
+                "nome": "Hadassa Peixoto Nunes",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/hadassa.peixoto.nunes.png"
             },
             {
-                "nome": "Thauany",
-                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/thauany.png"
+                "nome": "Thauany Karini Miacci",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/thauany.karini.miacci.png"
             },
             {
-                "nome": "Ana Vitoria",
-                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/ana.vitoria.png"
+                "nome": "Ana Vitoria Leandro Fortunato",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/ana.vitoria.leandro.fortunato.png"
             },
             {
-                "nome": "Michele",
-                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/michele.png"
+                "nome": "Michele Ferreira Oliveira",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/michele.ferreira.oliveira.png"
             },
             {
-                "nome": "Viviane Soleo",
-                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/viviane.soleo.png"
+                "nome": "Viviane Soléo de Paula",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/viviane.soleo.de.paula.png"
             }
         ]
     },
