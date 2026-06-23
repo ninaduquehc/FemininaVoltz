@@ -9,11 +9,11 @@
         "lideres": [
             {
                 "nome": "Maiza Aimy",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/maiza.png"
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/maiza.aimy.png"
             },
             {
                 "nome": "Bianca Tavares",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/biancatavares.png"
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/bianca.tavares.png"
             },
             {
                 "nome": "Yasmim Lemes",
@@ -31,7 +31,7 @@
         "lideres": [
             {
                 "nome": "Giovana Borges",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/gi.borges.png"
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_FEARLESS_KAT/giovana.borges.png"
             },
             {
                 "nome": "Giovanna",
@@ -53,7 +53,7 @@
         "lideres": [
             {
                 "nome": "Júlia Morotti",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/morotti.png"
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/julia.morotti.png"
             },
             {
                 "nome": "Luara",
@@ -68,12 +68,12 @@
                 "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.luiza.png"
             },
             {
-                "nome": "Maria Eduarda",
+                "nome": "Maria Eduarda Azevedo",
                 "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.eduarda.azevedo.png"
             },
             {
                 "nome": "Ana Carolina Brisolla",
-                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/brisolla.png"
+                "foto": "https://static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/ana.carolina.brisolla.png"
             }
         ]
     },
@@ -87,19 +87,19 @@
         "lideres": [
             {
                 "nome": "Ana Beatriz Corilow",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/corilow.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/ana.beatriz.corilow.png"
             },
             {
                 "nome": "Anna Luiza Venâncio",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/anna.oliveira.venancio.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/anna.luiza.venancio.png"
             },
             {
-                "nome": "Ester Santos",
+                "nome": "Ester Ragi Santos",
                 "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/ester.ragi.santos.png"
             },
             {
                 "nome": "Fernanda Campos",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/nanda.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_BLOOM_AINOA/fernanda.campos.png"
             },
             {
                 "nome": "⁠Iasmin Ferreira",
@@ -120,8 +120,8 @@
                 "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/leticia.chaves.png"
             },
             {
-                "nome": "Sophia",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/sophia.png"
+                "nome": "Sophia Castilho",
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/sophia.castilho.png"
             },
             {
                 "nome": "Lara Anacleto",
@@ -139,7 +139,7 @@
         "lideres": [
             {
                 "nome": "Marina Duque",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/marina.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/marina.duque.png"
             },
             {
                 "nome": "Ester",
@@ -147,7 +147,7 @@
             },
             {
                 "nome": "Kamily Bedim",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/kamily.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/kamily.bedim.png"
             }
         ]
     },
@@ -161,7 +161,7 @@
         "lideres": [
             {
                 "nome": "Arielly Santos",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/arielly.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/arielly.santos.png"
             },
             {
                 "nome": "Rebeca Galvez",
@@ -191,7 +191,7 @@
             },
             {
                 "nome": "Sofie Moreira",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/sofie.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/sofie.moreira.png"
             },
             {
                 "nome": "Maísa Almeida",
@@ -199,7 +199,7 @@
             },
             {
                 "nome": "Rafaela Geara",
-                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/geara.png"
+                "foto": "https://static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/rafaela.geara.png"
             }
         ]
     },
@@ -211,12 +211,30 @@
         "coordenadora_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/02_TIA.GI.png",
         "supervisaoId": "rooted",
         "lideres": [
-            "Rhaissa",
-            "Hadassa",
-            "Thauany",
-            "Ana Vitoria",
-            "Michele",
-            "Viviane Soleo"
+            {
+                "nome": "Rhaissa",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/rhaissa.png"
+            },
+            {
+                "nome": "Hadassa",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/hadassa.png"
+            },
+            {
+                "nome": "Thauany",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/thauany.png"
+            },
+            {
+                "nome": "Ana Vitoria",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/ana.vitoria.png"
+            },
+            {
+                "nome": "Michele",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/michele.png"
+            },
+            {
+                "nome": "Viviane Soleo",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/viviane.soleo.png"
+            }
         ]
     },
     {
@@ -227,10 +245,22 @@
         "coordenadora_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/02_BIANCA.png",
         "supervisaoId": "rooted",
         "lideres": [
-            "Larissa Freitas",
-            "⁠Rafaela Lima",
-            "⁠Maria Eduarda Quintans",
-            "Manuela Dutra"
+            {
+                "nome": "Larissa Freitas",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/larissa.freitas.png"
+            },
+            {
+                "nome": "Rafaela Lima",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/rafaela.lima.png"
+            },
+            {
+                "nome": "Maria Eduarda Quintans",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/maria.eduarda.quintans.png"
+            },
+            {
+                "nome": "Manuela Dutra",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/manuela.dutra.png"
+            }
         ]
     },
     {
@@ -241,7 +271,26 @@
         "coordenadora_foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/02_LOREN.png",
         "supervisaoId": "rooted",
         "lideres": [
-            "blablabla"
+            {
+                "nome": "Vitória Faria",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/vitoria.faria.png"
+            },
+            {
+                "nome": "Raianne Torres",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/raianne.torres.png"
+            },
+            {
+                "nome": "Melise Souza",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/melise.souza.png"
+            },
+            {
+                "nome": "Giovanna Martinelli",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/giovanna.martinelli.png"
+            },
+            {
+                "nome": "Ingrid Vaisset",
+                "foto": "https://static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/ingrid.vaisset.png"
+            }
         ]
     }
 ]
