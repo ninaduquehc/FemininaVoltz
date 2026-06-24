@@ -39,8 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   </nav>
 
-      <img class="logo" src="static/imagens/LOGO_VOLTZ.png" alt="Logo Feminina Voltz">
-
 </header>
   `;
 
