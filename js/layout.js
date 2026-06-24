@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    const navbar = `
+  const navbar = `
   <header>
     <nav class="navbar navbar-expand-lg fixed-top py-3">
       <div class="container">
@@ -11,16 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-          </ul>
+
+          <form class="d-flex ms-auto" role="search">
+            <input
+              id="campoPesquisa"
+              class="form-control"
+              type="search"
+              placeholder="Pesquisa">
+          </form>
+
         </div>
+
       </div>
     </nav>
   </header>
   `;
 
-    const footer = `
+  const footer = `
   <footer class="text-center p-3 mt-5">
     <section id="contato" class="container section">
 
@@ -50,10 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
   </footer>
   `;
 
-    // INSERE NO TOPO
-    document.body.insertAdjacentHTML("afterbegin", navbar);
-
-    // INSERE NO FINAL
-    document.body.insertAdjacentHTML("beforeend", footer);
-
+  document.body.insertAdjacentHTML("afterbegin", navbar);
+  document.body.insertAdjacentHTML("beforeend", footer);
 });
