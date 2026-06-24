@@ -147,6 +147,12 @@ header {
     margin: 100px auto 1rem;
 }
 
+.logo-section {
+    background-color: var(--cor-roxo);
+    padding: 160px 20px 40px;
+    border: 2px solid red;
+}
+
 
 
 /* FOOTER */
