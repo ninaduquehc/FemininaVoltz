@@ -1,61 +1,96 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const navbar = `
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top py-3">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Feminina Voltz</a>
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <img class="navbar-logo" src="static/imagens/LOGO_VOLTZ.png" alt="Logo Feminina Voltz">
 
-        <div class="collapse navbar-collapse" id="menu">
+      <a class="navbar-brand" href="index.html">
+        Feminina Voltz
+      </a>
 
-          <form class="d-flex ms-auto" role="search">
-            <input
-              id="campoPesquisa"
-              class="form-control"
-              type="search"
-              placeholder="Pesquisa">
-          </form>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menu">
 
-        </div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <form class="search-form ms-auto">
+          
+          <button type="button" class="search-btn">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <input class="search-input" type="search" placeholder="Pesquisar">
+
+        </form>
 
       </div>
-    </nav>
-  </header>
+
+    </div>
+
+  </nav>
+
+      <img class="logo" src="static/imagens/LOGO_VOLTZ.png" alt="Logo Feminina Voltz">
+
+</header>
   `;
 
   const footer = `
-  <footer class="text-center p-3 mt-5">
-    <section id="contato" class="container section">
+<footer class="footer text-center p-3 mt-5">
 
-      <ul class="contato-lista">
+  <section id="contato" class="container">
 
-        <a href="#" class="social-item">
+    <ul class="contato-lista">
 
-            <i class="bi bi-youtube"></i>
-            <span>@elevevoltz</span>
-
+      <li>
+        <a href="https://www.youtube.com/@elevevoltz" target="_blank" class="social-item">
+          <i class="bi bi-youtube"></i>
+          <span>@elevevoltz</span>
         </a>
+      </li>
 
-        <a href="#" class="social-item">
-
-            <i class="bi bi-instagram"></i>
-            <span>@elevevoltz</span>
-
+      <li>
+        <a href="https://www.instagram.com/elevevoltz/" target="_blank" class="social-item">
+          <i class="bi bi-instagram"></i>
+          <span>@elevevoltz</span>
         </a>
+      </li>
 
-      </ul>
+    </ul>
 
-    </section>
+  </section>
 
-    <p class="mb-0">
-      © 2026 - Lideranças Feminina Voltz
-    </p>
-  </footer>
+  <p class="copyright mb-0">
+    © 2026 Lideranças Feminina Voltz
+  </p>
+
+</footer>
   `;
 
   document.body.insertAdjacentHTML("afterbegin", navbar);
   document.body.insertAdjacentHTML("beforeend", footer);
+
+  // ✅ SEARCH TOGGLE (TEM QUE VIR AQUI EM BAIXO)
+  const form = document.querySelector(".search-form");
+  const btn = document.querySelector(".search-btn");
+
+  if (form && btn) {
+    btn.addEventListener("click", () => {
+      form.classList.toggle("active");
+
+      if (form.classList.contains("active")) {
+        form.querySelector("input").focus();
+      }
+    });
+  }
+
 });
