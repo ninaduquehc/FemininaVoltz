@@ -219,6 +219,19 @@ a:hover {
     padding: 1px 20px 40px;
 }
 
+.title {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: var(--cor-amarelo);
+}
+
+.subtitle {
+    text-align: center;
+    margin: 0 0 0 0;
+    color: var(--cor-roxo);
+}
+
+
 /* SUPERVISÕES E COORDENAÇÕES */
 
 .descricao {
@@ -255,11 +268,21 @@ footer {
     line-height: 1;
 }
 
-.social-item i {
+.icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+}
+
+.icon-search {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.search-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1;
 }
 
 .copyright {
