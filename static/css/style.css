@@ -4,7 +4,7 @@
     --cor-branco: #fff;
     --cor-roxo: #814793;
     --cor-amarelo: #F1C232;
-    --navbar-height: 80px;
+    --navbar-height: 60px;
 }
 
 
@@ -238,6 +238,146 @@ a:hover {
 
 .descricao {
     text-align: center;
+}
+
+
+
+
+/* CARDS (listagem de coordenações/supervisões) */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    color: inherit; /* evita herdar o amarelo do a:hover global no texto todo */
+}
+
+.card-foto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--cor-roxo);
+}
+
+.card-titulo {
+    color: var(--cor-roxo);
+    font-family: "Cinzel", serif;
+    margin-bottom: 0.25rem;
+}
+
+.card-subtitulo {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* DETALHE (coordenação ou supervisão individual) */
+
+.detalhe-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    background-color: #f9f5fb;
+}
+
+.detalhe-foto {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+    border-radius: 12px;
+}
+
+.detalhe-header h1 {
+    color: var(--cor-roxo);
+    font-family: "Cinzel", serif;
+    margin-bottom: 1rem;
+}
+
+.detalhe-significado,
+.detalhe-simbolo,
+.detalhe-base,
+.detalhe-personagem {
+    max-width: 600px;
+    margin: 0.5rem auto;
+    color: #444;
+}
+
+.coordenadora-info,
+.supervisora-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.coordenadora-foto,
+.supervisora-foto {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor-amarelo);
+}
+
+
+/* GRID DE LÍDERES / COORDENAÇÕES DENTRO DO DETALHE */
+
+.lideres-grid,
+.coordenacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto 4rem;
+}
+
+.lider-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lider-foto {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 2px solid var(--cor-roxo);
+}
+
+.lider-nome {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+
+/* MENSAGEM DE ERRO */
+
+.erro {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #999;
 }
 
 
