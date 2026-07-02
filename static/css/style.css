@@ -4,6 +4,7 @@
     --cor-branco: #fff;
     --cor-roxo: #814793;
     --cor-amarelo: #F1C232;
+    --navbar-height: 80px;
 }
 
 
@@ -28,6 +29,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    padding-top: var(--navbar-height);
 }
 
 img,
@@ -236,7 +238,6 @@ a:hover {
 
 .descricao {
     text-align: center;
-    margin: 5rem 0 0 0;
 }
 
 

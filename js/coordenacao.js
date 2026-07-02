@@ -59,5 +59,5 @@ function renderDetalhe(id, coordenacoes) {
     </section>
   `;
 
-  document.body.insertAdjacentHTML("beforeend", html);
+  document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
 }

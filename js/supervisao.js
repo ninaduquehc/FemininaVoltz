@@ -33,7 +33,7 @@ function renderDetalhe(id, supervisoes, coordenacoes) {
   const supervisao = supervisoes.find(s => s.id === id);
 
   if (!supervisao) {
-    document.body.insertAdjacentHTML("beforeend", `<p class="erro">Supervisão não encontrada.</p>`);
+    document.querySelector("#conteudo").insertAdjacentHTML("beforeend", `<p class="erro">Supervisão não encontrada.</p>`);
     return;
   }
 
@@ -68,5 +68,5 @@ function renderDetalhe(id, supervisoes, coordenacoes) {
     </section>
   `;
 
-  document.body.insertAdjacentHTML("beforeend", html);
+  document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
 }
