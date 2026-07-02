@@ -246,9 +246,9 @@ a:hover {
 footer {
     background-color: var(--cor-roxo);
     color: var(--cor-branco);
-    padding: 5rem;
+    padding: 2rem;
     text-align: center;
-    margin-top: 5rem;
+    margin: 5rem 0 0 0;
 }
 
 .contato-lista {
