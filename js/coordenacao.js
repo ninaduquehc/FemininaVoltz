@@ -48,6 +48,13 @@ function renderDetalhe(id, coordenacoes) {
     <section class="detalhe-header">
       <img class="detalhe-foto" src="${coordenacao.coordenacao_foto}" alt="${coordenacao.nome}">
       <h1>${coordenacao.nome}</h1>
+
+      <p class="detalhe-significado"><strong>Significado:</strong> ${coordenacao.significado}</p>
+      <p class="detalhe-simbolo"><strong>Símbolo:</strong> ${coordenacao.simbolo}</p>
+      <p class="detalhe-base"><strong>Base bíblica:</strong> ${coordenacao.base_biblica}</p>
+      <p class="detalhe-personagem"><strong>Personagem bíblica:</strong> ${coordenacao.personagem_biblica}</p>
+      
+
       <div class="coordenadora-info">
         <img class="coordenadora-foto" src="${coordenacao.coordenadora_foto}" alt="${coordenacao.coordenadora}">
         <p>${coordenacao.coordenadora}</p>

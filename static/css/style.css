@@ -3,9 +3,12 @@
 :root {
     --cor-branco: #fff;
     --cor-roxo: #814793;
+    --cor-lilas:  #f9f5fb;
     --cor-amarelo: #F1C232;
+    --cor-texto: #444;
     --cor-cinza: #666;
     --navbar-height: 120px;
+    --arredondado: 12px;
     --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
     --sombra-pesada: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
@@ -261,7 +264,7 @@ a:hover {
     align-items: center;
     text-align: center;
     background-color:var(--cor-branco);
-    border-radius: 12px;
+    border-radius: var(--arredondado);
     padding: 2.5rem;
     box-shadow: var(--sombra);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -299,14 +302,14 @@ a:hover {
 .detalhe-header {
     text-align: center;
     padding: 3rem 1rem 2rem;
-    background-color: #f9f5fb;
+    background-color: var(--cor-lilas);
 }
 
 .detalhe-foto {
     width: 100%;
     max-width: 300px;
     margin: 0 auto 1rem;
-    border-radius: 12px;
+    border-radius: var(--arredondado);
 }
 
 .detalhe-header h1 {
@@ -321,7 +324,7 @@ a:hover {
 .detalhe-personagem {
     max-width: 600px;
     margin: 0.5rem auto;
-    color: #444;
+    color: var(--cor-texto);
 }
 
 .coordenadora-info,
@@ -335,11 +338,11 @@ a:hover {
 
 .coordenadora-foto,
 .supervisora-foto {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--cor-amarelo);
+    border: 5px solid var(--cor-amarelo);
 }
 
 
@@ -348,9 +351,10 @@ a:hover {
 .lideres-grid,
 .coordenacoes-grid {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 1.5rem;
-    margin: 2rem auto 4rem;
+    margin: 2rem auto 1rem;
 }
 
 .lider-card {
@@ -366,12 +370,12 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 0.5rem;
-    border: 2px solid var(--cor-roxo);
+    border: 3.5px solid var(--cor-roxo);
 }
 
 .lider-nome {
     font-size: 0.9rem;
-    color: #444;
+    color: var(--cor-cinza);
 }
 
 
@@ -380,7 +384,7 @@ a:hover {
 .erro {
     text-align: center;
     padding: 3rem 1rem;
-    color: #999;
+    color: var(--cor-texto);
 }
 
 
