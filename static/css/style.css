@@ -4,7 +4,10 @@
     --cor-branco: #fff;
     --cor-roxo: #814793;
     --cor-amarelo: #F1C232;
-    --navbar-height: 60px;
+    --cor-cinza: #666;
+    --navbar-height: 120px;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --sombra-pesada: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -247,9 +250,9 @@ a:hover {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3.5rem;
+    margin: 5rem auto;
 }
 
 .card {
@@ -257,17 +260,16 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff;
+    background-color:var(--cor-branco);
     border-radius: 12px;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    box-shadow: var(--sombra);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    color: inherit; /* evita herdar o amarelo do a:hover global no texto todo */
+    box-shadow: var(--sombra-pesada);
 }
 
 .card-foto {
@@ -276,10 +278,11 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 3px solid var(--cor-roxo);
+    border: 3.5px solid var(--cor-amarelo);
 }
 
 .card-titulo {
+    font-size: 1.3rem;
     color: var(--cor-roxo);
     font-family: "Cinzel", serif;
     margin-bottom: 0.25rem;
@@ -287,7 +290,7 @@ a:hover {
 
 .card-subtitulo {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--cor-cinza);
 }
 
 
