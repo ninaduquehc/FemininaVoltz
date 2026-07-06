@@ -7,7 +7,7 @@
     --cor-amarelo: #F1C232;
     --cor-texto: #444;
     --cor-cinza: #666;
-    --navbar-height: 120px;
+    --navbar-height: 60px;
     --arredondado: 12px;
     --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
     --sombra-pesada: 0 6px 16px rgba(0, 0, 0, 0.12);
@@ -36,6 +36,10 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     padding-top: var(--navbar-height);
+}
+
+.body-index {
+    padding-top: 0px;
 }
 
 img,
@@ -245,15 +249,16 @@ a:hover {
 
 .descricao {
     text-align: center;
+    padding: 20rem;
+    margin: 20rem;
 }
-
-
 
 
 /* CARDS (listagem de coordenações/supervisões) */
 
 .cards-grid {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     gap: 3.5rem;
     margin: 5rem auto;
@@ -363,6 +368,10 @@ a:hover {
     gap: 1.5rem;
 }
 
+#coordenacoes-grid {
+    margin-top: 1.5rem;
+}
+
 .lider-card {
     display: flex;
     flex-direction: column;
@@ -388,7 +397,9 @@ a:hover {
 /* LEGADOS */
 
 .descricao {
-    margin-bottom: 3rem;
+    margin: 0;
+    background-color: var(--cor-lilas);
+    padding: 1rem;
 }
 
 

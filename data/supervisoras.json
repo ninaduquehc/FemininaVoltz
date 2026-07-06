@@ -1,16 +1,5 @@
 [
   {
-    "id": "pure",
-    "nome": "Pure",
-    "significado": "Pureza, santidade e coração limpo diante de Deus.",
-    "simbolo": "Pomba, rosa e fogo",
-    "base_biblica": "'O teu povo é o meu povo, e o teu Deus é o meu Deus' (Rute 1:16)",
-    "personagem_biblica": "Rute — símbolo de pureza, humildade e obediência ao propósito divino.",
-    "supervisora": "Kathllen Letícia",
-    "supervisora_foto": "static/imagens/SUPER_PURE_KAT/KATH.png",
-    "logo": "static/imagens/SUPER_PURE_KAT/PURE.png"
-  },
-  {
     "id": "compass",
     "nome": "Compass",
     "significado": "Direção certa pelo Espírito Santo, permanecer no propósito",
@@ -20,6 +9,17 @@
     "supervisora": "Natalia Saar",
     "supervisora_foto": "static/imagens/SUPER_COMPASS_JU/NAT.png",
     "logo": "static/imagens/SUPER_COMPASS_JU/COMPASS.png"
+  },
+  {
+    "id": "pure",
+    "nome": "Pure",
+    "significado": "Pureza, santidade e coração limpo diante de Deus.",
+    "simbolo": "Pomba, rosa e fogo",
+    "base_biblica": "'O teu povo é o meu povo, e o teu Deus é o meu Deus' (Rute 1:16)",
+    "personagem_biblica": "Rute — símbolo de pureza, humildade e obediência ao propósito divino.",
+    "supervisora": "Kathllen Letícia",
+    "supervisora_foto": "static/imagens/SUPER_PURE_KAT/KATH.png",
+    "logo": "static/imagens/SUPER_PURE_KAT/PURE.png"
   },
   {
     "id": "rooted",
