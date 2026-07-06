@@ -61,8 +61,10 @@ function renderDetalhe(id, coordenacoes) {
       </div>
     </section>
 
-    <section class="container lideres-grid">
-      ${lideresHtml}
+    <section class="lideres-secao">
+      <div class="container lideres-grid">
+        ${lideresHtml}
+      </div>
     </section>
   `;
 

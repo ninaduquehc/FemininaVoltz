@@ -237,6 +237,7 @@ a:hover {
     text-align: center;
     margin: 0 0 0 0;
     color: var(--cor-roxo);
+    margin-bottom: 3rem;
 }
 
 
@@ -302,7 +303,6 @@ a:hover {
 .detalhe-header {
     text-align: center;
     padding: 3rem 1rem 2rem;
-    background-color: var(--cor-lilas);
 }
 
 .detalhe-foto {
@@ -348,13 +348,19 @@ a:hover {
 
 /* GRID DE LÍDERES / COORDENAÇÕES DENTRO DO DETALHE */
 
+.lideres-secao,
+.coordenacoes-secao {
+    width: 100%;
+    background-color: var(--cor-lilas);
+    padding: 2rem 0 3.8rem;
+}
+
 .lideres-grid,
 .coordenacoes-grid {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 1.5rem;
-    margin: 2rem auto 1rem;
 }
 
 .lider-card {
@@ -379,6 +385,13 @@ a:hover {
 }
 
 
+/* LEGADOS */
+
+.descricao {
+    margin-bottom: 3rem;
+}
+
+
 /* MENSAGEM DE ERRO */
 
 .erro {
@@ -396,7 +409,7 @@ footer {
     color: var(--cor-branco);
     padding: 2rem;
     text-align: center;
-    margin: 5rem 0 0 0;
+    margin: 0;
 }
 
 .contato-lista {

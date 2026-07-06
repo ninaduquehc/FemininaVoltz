@@ -63,8 +63,10 @@ function renderDetalhe(id, supervisoes, coordenacoes) {
       </div>
     </section>
 
-    <section class="container coordenacoes-grid">
-      ${coordenacoesHtml}
+    <section class="coordenacoes-secao">
+      <div class="container coordenacoes-grid">
+        ${coordenacoesHtml}
+      </div>
     </section>
   `;
 
