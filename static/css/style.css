@@ -3,7 +3,7 @@
 :root {
     --cor-branco: #fff;
     --cor-roxo: #814793;
-    --cor-lilas:  #f9f5fb;
+    --cor-lilas: #f9f5fb;
     --cor-amarelo: #F1C232;
     --cor-texto: #444;
     --cor-cinza: #666;
@@ -91,7 +91,7 @@ a:hover {
 
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -269,7 +269,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:var(--cor-branco);
+    background-color: var(--cor-branco);
     border-radius: var(--arredondado);
     padding: 2.5rem;
     box-shadow: var(--sombra);
@@ -360,12 +360,12 @@ a:hover {
     padding: 2rem 0 3.8rem;
 }
 
-.lideres-grid,
-.coordenacoes-grid {
+.lideres-grid, .coordenacoes-grid {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 220px);
 }
 
 #coordenacoes-grid {
