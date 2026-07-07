@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
+  const busca = params.get("busca");
 
   const res = await fetch("data/legados.json");
   const legados = await res.json();
 
   if (id) {
-    renderDetalhe(id, legados);
+    renderDetalhe(id, legados, busca);
   } else {
     renderLista(legados);
   }
@@ -27,7 +28,7 @@ function renderLista(legados) {
   grid.insertAdjacentHTML("beforeend", html);
 }
 
-function renderDetalhe(id, legados) {
+function renderDetalhe(id, legados, busca) {
   const legado = legados.find(l => l.id === id);
 
   if (!legado) {
@@ -47,32 +48,36 @@ function renderDetalhe(id, legados) {
            src="${legado.logo}"
            alt="${legado.nome}">
 
-      <h1>${legado.nome}</h1>
+      <div class="detalhe-informacoes">
 
-      <p class="detalhe-significado">
-        <strong>Significado:</strong>
-        ${legado.significado}
-      </p>
+        <h1>${legado.nome}</h1>
 
-      <p class="detalhe-simbolo">
-        <strong>Símbolo:</strong>
-        ${legado.simbolo}
-      </p>
+        <p class="detalhe-significado">
+          <strong>Significado:</strong>
+          ${legado.significado}
+        </p>
 
-      <p class="detalhe-base">
-        <strong>Base bíblica:</strong>
-        ${legado.base_biblica}
-      </p>
+        <p class="detalhe-simbolo">
+          <strong>Símbolo:</strong>
+          ${legado.simbolo}
+        </p>
 
-      <p class="detalhe-personagem">
-        <strong>Personagem bíblica:</strong>
-        ${legado.personagem_biblica}
-      </p>
+        <p class="detalhe-base">
+          <strong>Base bíblica:</strong>
+          ${legado.base_biblica}
+        </p>
 
-      <p class="detalhe-informacoes">
-        <strong>Informações:</strong>
-        ${legado.informacoes}
-      </p>
+        <p class="detalhe-personagem">
+          <strong>Personagem bíblica:</strong>
+          ${legado.personagem_biblica}
+        </p>
+
+        <p>
+          <strong>Informações:</strong>
+          ${legado.informacoes}
+        </p>
+
+      </div>
 
       <div class="coordenadora-info">
         <img
@@ -88,4 +93,135 @@ function renderDetalhe(id, legados) {
   `;
 
   document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
+  if (busca) {
+    destacarTexto(busca);
+  }
+
+  // DESTACAR TEXTO
+  function destacarTexto(busca) {
+
+    const conteudo = document.querySelector("#conteudo");
+
+    if (!conteudo) return;
+
+
+    function normalizar(texto) {
+      return texto
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    }
+
+
+    const buscaNormalizada = normalizar(busca);
+
+
+    function percorrerNos(elemento) {
+
+      elemento.childNodes.forEach(no => {
+
+
+        if (no.nodeType === Node.TEXT_NODE) {
+
+          const textoOriginal = no.textContent;
+
+          const textoNormalizado = normalizar(textoOriginal);
+
+
+          const indice = textoNormalizado.indexOf(buscaNormalizada);
+
+
+          if (indice !== -1) {
+
+
+            // pega a posição correta no texto original
+            let contador = 0;
+            let inicioOriginal = 0;
+
+
+            for (let i = 0; i < textoOriginal.length; i++) {
+
+              const caractereNormalizado = normalizar(
+                textoOriginal[i]
+              );
+
+
+              contador += caractereNormalizado.length;
+
+
+              if (contador > indice) {
+                inicioOriginal = i;
+                break;
+              }
+
+            }
+
+
+            const fimOriginal =
+              inicioOriginal + busca.length;
+
+
+            const fragmento =
+              document.createDocumentFragment();
+
+
+            const antes =
+              textoOriginal.substring(
+                0,
+                inicioOriginal
+              );
+
+
+            const destaque =
+              textoOriginal.substring(
+                inicioOriginal,
+                fimOriginal
+              );
+
+
+            const depois =
+              textoOriginal.substring(
+                fimOriginal
+              );
+
+
+            if (antes) {
+              fragmento.appendChild(
+                document.createTextNode(antes)
+              );
+            }
+
+
+            const mark = document.createElement("mark");
+            mark.textContent = destaque;
+
+            fragmento.appendChild(mark);
+
+
+            if (depois) {
+              fragmento.appendChild(
+                document.createTextNode(depois)
+              );
+            }
+
+
+            no.replaceWith(fragmento);
+
+          }
+
+
+        } else {
+
+          percorrerNos(no);
+
+        }
+
+      });
+
+    }
+
+
+    percorrerNos(conteudo);
+
+  }
 }

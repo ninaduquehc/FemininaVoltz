@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
+  const busca = params.get("busca");
 
   const res = await fetch("data/supervisoras.json");
   const supervisoes = await res.json();
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (id) {
     const resCoord = await fetch("data/coordenadoras.json");
     const coordenacoes = await resCoord.json();
-    renderDetalhe(id, supervisoes, coordenacoes);
+    renderDetalhe(id, supervisoes, coordenacoes, busca);
   } else {
     renderLista(supervisoes);
   }
@@ -29,7 +30,7 @@ function renderLista(supervisoes) {
   grid.insertAdjacentHTML("beforeend", html);
 }
 
-function renderDetalhe(id, supervisoes, coordenacoes) {
+function renderDetalhe(id, supervisoes, coordenacoes, busca) {
   const supervisao = supervisoes.find(s => s.id === id);
 
   if (!supervisao) {
@@ -49,7 +50,7 @@ function renderDetalhe(id, supervisoes, coordenacoes) {
     </a>
   `).join("");
 
-const html = `
+  const html = `
   <section class="detalhe-header">
 
     <div class="supervisora-info">
@@ -89,4 +90,135 @@ const html = `
 `;
 
   document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
+  if (busca) {
+    destacarTexto(busca);
+  }
+
+  // DESTACAR TEXTO
+  function destacarTexto(busca) {
+
+    const conteudo = document.querySelector("#conteudo");
+
+    if (!conteudo) return;
+
+
+    function normalizar(texto) {
+      return texto
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    }
+
+
+    const buscaNormalizada = normalizar(busca);
+
+
+    function percorrerNos(elemento) {
+
+      elemento.childNodes.forEach(no => {
+
+
+        if (no.nodeType === Node.TEXT_NODE) {
+
+          const textoOriginal = no.textContent;
+
+          const textoNormalizado = normalizar(textoOriginal);
+
+
+          const indice = textoNormalizado.indexOf(buscaNormalizada);
+
+
+          if (indice !== -1) {
+
+
+            // pega a posição correta no texto original
+            let contador = 0;
+            let inicioOriginal = 0;
+
+
+            for (let i = 0; i < textoOriginal.length; i++) {
+
+              const caractereNormalizado = normalizar(
+                textoOriginal[i]
+              );
+
+
+              contador += caractereNormalizado.length;
+
+
+              if (contador > indice) {
+                inicioOriginal = i;
+                break;
+              }
+
+            }
+
+
+            const fimOriginal =
+              inicioOriginal + busca.length;
+
+
+            const fragmento =
+              document.createDocumentFragment();
+
+
+            const antes =
+              textoOriginal.substring(
+                0,
+                inicioOriginal
+              );
+
+
+            const destaque =
+              textoOriginal.substring(
+                inicioOriginal,
+                fimOriginal
+              );
+
+
+            const depois =
+              textoOriginal.substring(
+                fimOriginal
+              );
+
+
+            if (antes) {
+              fragmento.appendChild(
+                document.createTextNode(antes)
+              );
+            }
+
+
+            const mark = document.createElement("mark");
+            mark.textContent = destaque;
+
+            fragmento.appendChild(mark);
+
+
+            if (depois) {
+              fragmento.appendChild(
+                document.createTextNode(depois)
+              );
+            }
+
+
+            no.replaceWith(fragmento);
+
+          }
+
+
+        } else {
+
+          percorrerNos(no);
+
+        }
+
+      });
+
+    }
+
+
+    percorrerNos(conteudo);
+
+  }
 }
