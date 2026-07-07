@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const navbar = `
+const navbar = `
 <header>
   <nav class="navbar">
     <div class="container">
@@ -17,26 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <div class="navbar-menu" id="menu">
 
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">HOME</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="supervisoes.html">SUPERVISÕES</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="coordenacoes.html">COORDENAÇÕES</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="legados.html">LEGADOS</a>
-          </li>
-
-        </ul>
-
         <form class="search-form">
           <button type="button" class="search-btn">
             <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -46,12 +26,100 @@ document.addEventListener("DOMContentLoaded", () => {
           <input class="search-input" type="search" placeholder="Pesquisar">
         </form>
 
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+
+          <!-- SUPERVISÕES -->
+          <li class="nav-item">
+
+            <div class="dropdown-wrapper">
+
+              <a class="nav-link" href="supervisoes.html">
+                SUPERVISÕES
+              </a>
+
+              <button class="dropdown-toggle" type="button">▼</button>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="supervisao.html?id=compass">Compass</a></li>
+                <li><a href="supervisao.html?id=pure">Pure</a></li>
+                <li><a href="supervisao.html?id=rooted">Rooted</a></li>
+
+              </ul>
+
+            </div>
+
+          </li>
+
+          <!-- COORDENAÇÕES -->
+          <li class="nav-item">
+
+            <div class="dropdown-wrapper">
+
+              <a class="nav-link" href="coordenacoes.html">
+                COORDENAÇÕES
+              </a>
+
+              <button class="dropdown-toggle" type="button">▼</button>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="coordenacao.html?id=consistent">Consistent</a></li>
+                <li><a href="coordenacao.html?id=fearless">Fearless</a></li>
+                <li><a href="coordenacao.html?id=wise">Wise</a></li>
+                <li><a href="coordenacao.html?id=bloom">Bloom</a></li>
+                <li><a href="coordenacao.html?id=glow">Glow</a></li>
+                <li><a href="coordenacao.html?id=hope">Hope</a></li>
+                <li><a href="coordenacao.html?id=north">North</a></li>
+                <li><a href="coordenacao.html?id=thrive">Thrive</a></li>
+                <li><a href="coordenacao.html?id=aviv">Aviv</a></li>
+                <li><a href="coordenacao.html?id=joyfulness">Joyfulness</a></li>
+                <li><a href="coordenacao.html?id=bright">Bright</a></li>
+
+              </ul>
+
+            </div>
+
+          </li>
+
+          <!-- LEGADOS -->
+          <li class="nav-item">
+
+            <div class="dropdown-wrapper">
+
+              <a class="nav-link" href="legados.html">
+                LEGADOS
+              </a>
+
+              <button class="dropdown-toggle" type="button">▼</button>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="legado.html?id=meakness">Meakness</a></li>
+                <li><a href="legado.html?id=bravery">Bravery</a></li>
+                <li><a href="legado.html?id=influence">Influence</a></li>
+                <li><a href="legado.html?id=bright">Bright</a></li>
+                <li><a href="legado.html?id=joyfulness">Joyfulness</a></li>
+                <li><a href="legado.html?id=compass">Compass</a></li>
+
+              </ul>
+
+            </div>
+
+          </li>
+
+        </ul>
+
       </div>
 
     </div>
   </nav>
 </header>
-  `;
+`;
 
   const footer = `
 <footer class="footer">

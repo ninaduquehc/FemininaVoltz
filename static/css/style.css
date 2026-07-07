@@ -138,14 +138,69 @@ a:hover {
     color: var(--cor-branco);
 }
 
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:220px;
+    background:white;
+    border-radius:var(--arredondado);
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    border-radius:var(--arredondado);
+    z-index:999;
+    overflow:hidden;
+}
+
+.dropdown-wrapper{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.dropdown-toggle{
+    background:none;
+    border:none;
+    color:white;
+    padding:0 .4rem;
+    font-size:.7rem;
+    transition:.2s;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:12px 18px;
+    color:var(--cor-texto);
+    transition:.2s;
+}
+
+.dropdown-menu a:hover{
+    color:var(--cor-roxo);
+    border-radius:var(--arredondado);
+    background:var(--cor-lilas);
+}
+
+.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
 
 /* TOGGLER (botão hambúrguer) */
 
 .navbar-toggler {
     display: none;
     background: none;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
+    border: 1px solid var(--cor-lilas);
+    border-radius: var(--arredondado);
     padding: 0.25rem 0.6rem;
     margin-left: auto;
 }
@@ -185,7 +240,7 @@ a:hover {
 }
 
 .search-input:focus {
-    border-color: none;
+    border-color: var(--cor-amarelo);
     box-shadow: none;
 }
 
@@ -204,14 +259,15 @@ a:hover {
     outline: none;
     transition: 0.3s;
     margin-left: 0.5rem;
-    border-radius: 0px;
+    border-radius: var(--arredondado);
     padding: 0.4rem 1rem;
 }
 
 .search-form.active .search-input {
     width: 180px;
     opacity: 1;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2.4px solid var(--cor-amarelo);
+    margin-right: 0.6rem;
 }
 
 
@@ -399,7 +455,14 @@ a:hover {
 .descricao {
     margin: 0;
     background-color: var(--cor-lilas);
-    padding: 1rem;
+    padding: 3rem;
+    color: var(--cor-texto);
+}
+
+.descricao h1 {
+    color: var(--cor-roxo);
+    text-decoration: underline;
+    text-decoration-color: var(--cor-amarelo);
 }
 
 

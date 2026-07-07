@@ -1,0 +1,74 @@
+[
+  {
+    "id": "meakness",
+    "nome": "Meakness",
+    "significado": "Mansidão, humildade e submissão à vontade de Deus.",
+    "simbolo": "Ovelha comendo no pasto.",
+    "base_biblica": " “Bem-aventurados os mansos, porque herdarão a terra.” (Mateus 5:5)",
+    "personagem_biblica": " Rute — humilde e obediente, foi honrada por Deus e recebeu herança. ",
+    "lider": "Raquel",
+    "lider_foto": "static/imagens/LEGADOS/RAQUEL.png",
+    "logo": "static/imagens/LEGADOS/MEAKNESS.png",
+    "informacoes": "Ex Coordenadora"
+  },
+  {
+    "id": "bravery",
+    "nome": "Bravery",
+    "significado": "Coragem para viver a fé, mesmo em meio a desafios.",
+    "simbolo": "Mochila",
+    "base_biblica": " “Esforça-te e tem bom ânimo... porque o Senhor teu Deus é contigo.” (Josué 1:9)",
+    "personagem_biblica": "Priscila — corajosa, viajou com Paulo, discipulou Apolo e foi uma líder ativa da igreja primitiva. ",
+    "lider": "Fernanda Guedes",
+    "lider_foto": "static/imagens/LEGADOS/FERNANDA.png",
+    "logo": "static/imagens/LEGADOS/BRAVERY.png",
+    "informacoes": "Ex Coordenadora"
+  },
+  {
+    "id": "influence",
+    "nome": "Influence",
+    "significado": "Ser luz e exercer impacto com o amor de Cristo.",
+    "simbolo": "Coração em chamas.",
+    "base_biblica": "“Sede a carta de Cristo... escrita não com tinta, mas com o Espírito do Deus vivo.” (2 Coríntios 3:3)",
+    "personagem_biblica": "Maria Madalena — sua vida transformada influenciou muitos, sendo a primeira a anunciar a ressurreição. ",
+    "lider": "Ingrid Barretos",
+    "lider_foto": "static/imagens/LEGADOS/INGRID.png",
+    "logo": "static/imagens/LEGADOS/INFLUENCE.png",
+    "informacoes": "Ex Coordenadora e Supervisora; Juliana Prado assumiu seu papel como Supervisora em uma nova identidade, a Compass"
+  },
+  {
+    "id": "bright",
+    "nome": "Bright",
+    "significado": " Brilhar com a luz de Cristo em meio às trevas.",
+    "simbolo": "Borboleta no céu.",
+    "base_biblica": "“Vós sois a luz do mundo... brilhe a vossa luz diante dos homens.” (Mateus 5:14,16)",
+    "personagem_biblica": "Lídia — sua vida transformada brilhou ao abrir sua casa para a obra de Deus (Atos 16:14-15).",
+    "lider": "Thainá Primon",
+    "lider_foto": "static/imagens/LEGADOS/THAINA.png",
+    "logo": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/01_BRIGHT.png",
+    "informacoes": "Ex Coordenadora; Larissa Loren assumiu o papel na Coordenação"
+  },
+  {
+    "id": "joyfulness",
+    "nome": "Joyfulness",
+    "significado": "Alegria constante no Senhor, independente das circunstâncias.",
+    "simbolo": "Prancha.",
+    "base_biblica": "A alegria do Senhor é a vossa força.” (Neemias 8:10)",
+    "personagem_biblica": "Miriam — após a libertação do Egito, dançou e celebrou diante do Senhor (Êxodo 15:20-21). ",
+    "lider": "Evelyn Machado",
+    "lider_foto": "static/imagens/LEGADOS/EVELYN.png",
+    "logo": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/01_JOYFULNESS.png",
+    "informacoes": "Ex Coordenadora e atual Supervisora (Rooted); Bianca Ragazzi assumiu o papel na Coordenação"
+  },
+    {
+    "id": "compass",
+    "nome": "Compass",
+    "significado": "Direção certa pelo Espírito Santo, permanecer no propósito",
+    "simbolo": "Bússola",
+    "base_biblica": "O coração do homem traça o seu caminho, mas o Senhor lhe dirige os passos' (Provérbios 16:9)",
+    "personagem_biblica": "Noemi — mesmo após perdas, guiou Rute de volta a Belém, sendo instrumento de direção no plano de Deus",
+    "lider": "Juliana Prado",
+    "lider_foto": "static/imagens/LEGADOS/JULIANA.png",
+    "logo": "static/imagens/SUPER_COMPASS_JU/COMPASS.png",
+    "informacoes": "Ex Supervisora; Natalia Saar assumiu o papel na Supervisão"
+  }
+]
