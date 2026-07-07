@@ -248,27 +248,27 @@
         "supervisaoId": "rooted",
         "lideres": [
             {
-                "nome": "Rhaissa Vitória Paiva",
+                "nome": "Rhaissa Paiva",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/rhaissa.vitoria.paiva.png"
             },
             {
-                "nome": "Hadassa Peixoto Nunes",
+                "nome": "Hadassa Nunes",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/hadassa.peixoto.nunes.png"
             },
             {
-                "nome": "Thauany Karini Miacci",
+                "nome": "Thauany Miacci",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/thauany.karini.miacci.png"
             },
             {
-                "nome": "Ana Vitoria Leandro Fortunato",
+                "nome": "Ana Vitoria Fortunato",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/ana.vitoria.leandro.fortunato.png"
             },
             {
-                "nome": "Michele Ferreira Oliveira",
+                "nome": "Michele Oliveira",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/michele.ferreira.oliveira.png"
             },
             {
-                "nome": "Viviane Soléo de Paula",
+                "nome": "Viviane Soléo",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/viviane.soleo.de.paula.png"
             }
         ]

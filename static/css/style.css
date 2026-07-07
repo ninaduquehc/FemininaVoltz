@@ -172,6 +172,10 @@ a:hover {
     transition: 0.2s;
 }
 
+.dropdown-toggle:hover {
+    color: var(--cor-amarelo);
+}
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -260,6 +264,58 @@ a:hover {
     align-items: center;
 }
 
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    background: var(--cor-branco);
+    border-radius: var(--arredondado);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.2s;
+    z-index: 999;
+}
+
+
+/* quando tiver resultados */
+.search-results.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.search-item {
+    display: block;
+    padding: 12px 18px;
+    color: var(--cor-texto);
+    transition: 0.2s;
+}
+
+
+.search-item:hover {
+    color: var(--cor-roxo);
+    background: var(--cor-lilas);
+    border-radius: var(--arredondado);
+}
+
+
+.search-item strong {
+    display: block;
+    font-weight: 600;
+}
+
+
+.search-item span {
+    font-size: 0.8rem;
+    color: var(--cor-cinza);
+}
+
 .search-btn {
     display: flex;
     align-items: center;
@@ -292,6 +348,34 @@ a:hover {
     opacity: 1;
     margin-right: 0.6rem;
     border-bottom: 2.4px solid var(--cor-amarelo);
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    background: var(--cor-branco);
+    border-radius: var(--arredondado);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.search-item small {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    color: var(--cor-cinza);
 }
 
 
@@ -339,8 +423,6 @@ a:hover {
 
 .descricao h1 {
     color: var(--cor-roxo);
-    text-decoration: underline;
-    text-decoration-color: var(--cor-amarelo);
 }
 
 
@@ -402,6 +484,9 @@ a:hover {
 .detalhe-header {
     text-align: center;
     padding: 3rem 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .detalhe-header h1 {
@@ -411,10 +496,12 @@ a:hover {
 }
 
 .detalhe-foto {
-    width: 100%;
-    max-width: 300px;
+    width: 280px;
+    max-width: 280px;
     margin: 0 auto 1rem;
     border-radius: var(--arredondado);
+    grid-row: 1;
+    grid-column: 2;
 }
 
 .detalhe-significado,
@@ -422,9 +509,11 @@ a:hover {
 .detalhe-base,
 .detalhe-personagem,
 .detalhe-informacoes {
-    max-width: 600px;
+    max-width: 375px;
     margin: 0.5rem auto;
     color: var(--cor-texto);
+    grid-column: 3;
+    text-align: left;
 }
 
 .coordenadora-info,
@@ -432,17 +521,20 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    margin-top: 1.5rem;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10rem;
 }
 
 .coordenadora-foto,
 .supervisora-foto {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--cor-amarelo);
+    border: 5px solid var(--cor-roxo);
 }
 
 
@@ -459,10 +551,9 @@ a:hover {
 
 .lideres-grid,
 .coordenacoes-grid {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 220px);
     gap: 1.5rem;
 }
 
@@ -475,15 +566,16 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 220px;
 }
 
 .lider-foto {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 0.5rem;
-    border: 3.5px solid var(--cor-roxo);
+    border: 3.5px solid var(--cor-amarelo);
 }
 
 .lider-nome {

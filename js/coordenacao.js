@@ -44,29 +44,44 @@ function renderDetalhe(id, coordenacoes) {
     </div>
   `).join("");
 
-  const html = `
-    <section class="detalhe-header">
-      <img class="detalhe-foto" src="${coordenacao.coordenacao_foto}" alt="${coordenacao.nome}">
+const html = `
+  <section class="detalhe-header">
+
+    <div class="coordenadora-info">
+      <img class="coordenadora-foto" src="${coordenacao.coordenadora_foto}" alt="${coordenacao.coordenadora}">
+      <p>${coordenacao.coordenadora}</p>
+    </div>
+
+    <img class="detalhe-foto" src="${coordenacao.coordenacao_foto}" alt="${coordenacao.nome}">
+
+    <div class="detalhe-informacoes">
       <h1>${coordenacao.nome}</h1>
 
-      <p class="detalhe-significado"><strong>Significado:</strong> ${coordenacao.significado}</p>
-      <p class="detalhe-simbolo"><strong>Símbolo:</strong> ${coordenacao.simbolo}</p>
-      <p class="detalhe-base"><strong>Base bíblica:</strong> ${coordenacao.base_biblica}</p>
-      <p class="detalhe-personagem"><strong>Personagem bíblica:</strong> ${coordenacao.personagem_biblica}</p>
-      
+      <p class="detalhe-significado">
+        <strong>Significado:</strong> ${coordenacao.significado}
+      </p>
 
-      <div class="coordenadora-info">
-        <img class="coordenadora-foto" src="${coordenacao.coordenadora_foto}" alt="${coordenacao.coordenadora}">
-        <p>${coordenacao.coordenadora}</p>
-      </div>
-    </section>
+      <p class="detalhe-simbolo">
+        <strong>Símbolo:</strong> ${coordenacao.simbolo}
+      </p>
 
-    <section class="lideres-secao">
-      <div class="container lideres-grid">
-        ${lideresHtml}
-      </div>
-    </section>
-  `;
+      <p class="detalhe-base">
+        <strong>Base bíblica:</strong> ${coordenacao.base_biblica}
+      </p>
+
+      <p class="detalhe-personagem">
+        <strong>Personagem bíblica:</strong> ${coordenacao.personagem_biblica}
+      </p>
+    </div>
+
+  </section>
+
+  <section class="lideres-secao">
+    <div class="container lideres-grid">
+      ${lideresHtml}
+    </div>
+  </section>
+`;
 
   document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
 }

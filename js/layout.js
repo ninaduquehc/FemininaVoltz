@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const navbar = `
+  const navbar = `
 <header>
   <nav class="navbar">
     <div class="container">
@@ -16,15 +16,21 @@ const navbar = `
       </button>
 
       <div class="navbar-menu" id="menu">
-
+      <div class="search-wrapper">
         <form class="search-form">
+
           <button type="button" class="search-btn">
             <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
           </button>
+
           <input class="search-input" type="search" placeholder="Pesquisar">
+
+          <div class="search-results"></div>
+
         </form>
+      </div>
 
         <ul class="navbar-nav">
 
@@ -155,6 +161,79 @@ const navbar = `
   document.body.insertAdjacentHTML("afterbegin", navbar);
   document.body.insertAdjacentHTML("beforeend", footer);
 
+  // NORMALIZAÇÃO SEARCH
+  function normalizarTexto(texto) {
+    return String(texto)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
+
+  // CONTEXTO SEARCH
+  function encontrarTrecho(objeto, termo) {
+
+    const textoCompleto = JSON.stringify(objeto);
+
+    const textoNormalizado = normalizarTexto(textoCompleto);
+
+    const indice = textoNormalizado.indexOf(termo);
+
+
+    if (indice === -1) {
+      return "";
+    }
+
+
+    const inicio = Math.max(0, indice - 40);
+    const fim = Math.min(textoCompleto.length, indice + termo.length + 60);
+
+
+    return textoCompleto
+      .substring(inicio, fim)
+      .replace(/[{}[\]"]/g, "");
+  }
+
+  // SEARCH NOME
+  function encontrarDetalhe(item, termo) {
+
+    for (const chave in item) {
+
+      const valor = item[chave];
+
+
+      if (typeof valor === "string" &&
+        normalizarTexto(valor).includes(termo)) {
+
+        return `${chave}: ${valor}`;
+      }
+
+
+      if (Array.isArray(valor)) {
+
+        const encontrado = valor.find(obj =>
+          JSON.stringify(obj)
+            .toLowerCase()
+            .includes(termo)
+        );
+
+
+        if (encontrado) {
+
+          if (encontrado.nome) {
+            return `Líder: ${encontrado.nome}`;
+          }
+
+          return JSON.stringify(encontrado);
+        }
+
+      }
+
+    }
+
+
+    return "";
+  }
+
   // SEARCH TOGGLE
   const searchForm = document.querySelector(".search-form");
   const searchBtn = document.querySelector(".search-btn");
@@ -162,13 +241,133 @@ const navbar = `
   if (searchForm && searchBtn) {
     searchBtn.addEventListener("click", () => {
       searchForm.classList.toggle("active");
+
       if (searchForm.classList.contains("active")) {
         searchForm.querySelector("input").focus();
       }
     });
   }
 
-  // MENU MOBILE TOGGLE (substitui o data-bs-toggle do Bootstrap)
+
+  const searchInput = document.querySelector(".search-input");
+  const searchResults = document.querySelector(".search-results");
+
+
+  if (searchForm && searchInput && searchResults) {
+
+    searchForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+
+      const termo = normalizarTexto(searchInput.value.trim());
+
+
+      if (!termo) return;
+
+
+      const [supervisoras, coordenadoras, legados] = await Promise.all([
+        fetch("data/supervisoras.json").then(res => res.json()),
+        fetch("data/coordenadoras.json").then(res => res.json()),
+        fetch("data/legados.json").then(res => res.json())
+      ]);
+
+
+
+      const resultadosSupervisoras = supervisoras
+        .filter(item =>
+          normalizarTexto(JSON.stringify(item)).includes(termo)
+        )
+        .map(item => ({
+          tipo: "Supervisão",
+          nome: item.nome,
+          detalhe: encontrarDetalhe(item, termo),
+          link: `supervisao.html?id=${item.id}&busca=${termo}`
+        }));
+
+
+
+      const resultadosCoordenacoes = coordenadoras
+        .filter(item =>
+          normalizarTexto(JSON.stringify(item)).includes(termo)
+        )
+        .map(item => ({
+          tipo: "Coordenação",
+          nome: item.nome,
+          detalhe: encontrarDetalhe(item, termo),
+          link: `coordenacao.html?id=${item.id}&busca=${termo}`
+        }));
+
+
+
+      const resultadosLegados = legados
+        .filter(item =>
+          normalizarTexto(JSON.stringify(item)).includes(termo)
+        )
+        .map(item => ({
+          tipo: "Legado",
+          nome: item.nome,
+          detalhe: encontrarDetalhe(item, termo),
+          link: `legado.html?id=${item.id}&busca=${termo}`
+        }));
+
+
+
+      const resultados = [
+        ...resultadosSupervisoras,
+        ...resultadosCoordenacoes,
+        ...resultadosLegados
+      ];
+
+
+
+      console.log(resultados);
+
+
+
+      searchResults.innerHTML = "";
+
+
+
+      if (resultados.length === 0) {
+
+        searchResults.innerHTML = `
+        <p class="search-item">
+          Nenhum resultado encontrado
+        </p>
+      `;
+
+        searchResults.classList.add("active");
+
+        return;
+      }
+
+
+
+      resultados.forEach(resultado => {
+
+        searchResults.innerHTML += `
+        <a href="${resultado.link}" class="search-item">
+
+          <strong>${resultado.nome}</strong>
+
+          <span>${resultado.tipo}</span>
+
+          <small>${resultado.detalhe}</small>
+
+        </a>
+      `;
+
+      });
+
+
+
+      searchResults.classList.add("active");
+
+    });
+
+  }
+
+  // MENU MOBILE TOGGLE
   const menuBtn = document.querySelector(".navbar-toggler");
   const menu = document.querySelector(".navbar-menu");
 

@@ -49,26 +49,44 @@ function renderDetalhe(id, supervisoes, coordenacoes) {
     </a>
   `).join("");
 
-  const html = `
-    <section class="detalhe-header">
-      <img class="detalhe-foto" src="${supervisao.logo}" alt="${supervisao.nome}">
-      <h1>${supervisao.nome}</h1>
-      <p class="detalhe-significado"><strong>Significado:</strong> ${supervisao.significado}</p>
-      <p class="detalhe-simbolo"><strong>Símbolo:</strong> ${supervisao.simbolo}</p>
-      <p class="detalhe-base"><strong>Base bíblica:</strong> ${supervisao.base_biblica}</p>
-      <p class="detalhe-personagem"><strong>Personagem bíblica:</strong> ${supervisao.personagem_biblica}</p>
-      <div class="supervisora-info">
-        <img class="supervisora-foto" src="${supervisao.supervisora_foto}" alt="${supervisao.supervisora}">
-        <p>${supervisao.supervisora}</p>
-      </div>
-    </section>
+const html = `
+  <section class="detalhe-header">
 
-    <section class="coordenacoes-secao">
-      <div class="container coordenacoes-grid">
-        ${coordenacoesHtml}
-      </div>
-    </section>
-  `;
+    <div class="supervisora-info">
+      <img class="supervisora-foto" src="${supervisao.supervisora_foto}" alt="${supervisao.supervisora}">
+      <p>${supervisao.supervisora}</p>
+    </div>
+
+    <img class="detalhe-foto" src="${supervisao.logo}" alt="${supervisao.nome}">
+
+    <div class="detalhe-informacoes">
+      <h1>${supervisao.nome}</h1>
+
+      <p class="detalhe-significado">
+        <strong>Significado:</strong> ${supervisao.significado}
+      </p>
+
+      <p class="detalhe-simbolo">
+        <strong>Símbolo:</strong> ${supervisao.simbolo}
+      </p>
+
+      <p class="detalhe-base">
+        <strong>Base bíblica:</strong> ${supervisao.base_biblica}
+      </p>
+
+      <p class="detalhe-personagem">
+        <strong>Personagem bíblica:</strong> ${supervisao.personagem_biblica}
+      </p>
+    </div>
+
+  </section>
+
+  <section class="coordenacoes-secao">
+    <div class="container coordenacoes-grid">
+      ${coordenacoesHtml}
+    </div>
+  </section>
+`;
 
   document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
 }
