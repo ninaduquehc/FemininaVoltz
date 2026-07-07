@@ -1,4 +1,6 @@
-/* VARIÁVEIS */
+/* ==========================================================================
+   VARIÁVEIS
+   ========================================================================== */
 
 :root {
     --cor-branco: #fff;
@@ -14,8 +16,9 @@
 }
 
 
-
-/* RESET */
+/* ==========================================================================
+   RESET
+   ========================================================================== */
 
 *,
 *::before,
@@ -39,7 +42,7 @@ body {
 }
 
 .body-index {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 img,
@@ -79,7 +82,10 @@ table {
     border-spacing: 0;
 }
 
-/* LINKS */
+
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
 
 .nav-link:hover,
 a:hover {
@@ -87,7 +93,9 @@ a:hover {
 }
 
 
-/* CONTAINER */
+/* ==========================================================================
+   CONTAINER
+   ========================================================================== */
 
 .container {
     width: 100%;
@@ -97,7 +105,9 @@ a:hover {
 }
 
 
-/* NAVBAR */
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
 
 .navbar {
     position: fixed;
@@ -138,63 +148,70 @@ a:hover {
     color: var(--cor-branco);
 }
 
-.dropdown{
-    position:relative;
+
+/* ==========================================================================
+   DROPDOWN (submenus da navbar)
+   ========================================================================== */
+
+.dropdown {
+    position: relative;
 }
 
-.dropdown-menu{
-    position:absolute;
-    top:100%;
-    left:0;
-    min-width:220px;
-    background:white;
-    border-radius:var(--arredondado);
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
-    opacity:0;
-    visibility:hidden;
-    transform:translateY(10px);
-    border-radius:var(--arredondado);
-    z-index:999;
-    overflow:hidden;
+.dropdown-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.dropdown-wrapper{
-    position:relative;
-    display:flex;
-    align-items:center;
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: var(--cor-branco);
+    padding: 0 0.4rem;
+    font-size: 0.7rem;
+    transition: 0.2s;
 }
 
-.dropdown-toggle{
-    background:none;
-    border:none;
-    color:white;
-    padding:0 .4rem;
-    font-size:.7rem;
-    transition:.2s;
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: var(--cor-branco);
+    border-radius: var(--arredondado);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    z-index: 999;
+    overflow: hidden;
+    transition: 0.2s;
 }
 
-.dropdown-menu a{
-    display:block;
-    padding:12px 18px;
-    color:var(--cor-texto);
-    transition:.2s;
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    color: var(--cor-texto);
+    transition: 0.2s;
 }
 
-.dropdown-menu a:hover{
-    color:var(--cor-roxo);
-    border-radius:var(--arredondado);
-    background:var(--cor-lilas);
+.dropdown-menu a:hover {
+    color: var(--cor-roxo);
+    background: var(--cor-lilas);
+    border-radius: var(--arredondado);
 }
 
 .dropdown-toggle:hover + .dropdown-menu,
-.dropdown-menu:hover{
-    opacity:1;
-    visibility:visible;
-    transform:translateY(0);
+.dropdown-menu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 
-/* TOGGLER (botão hambúrguer) */
+/* ==========================================================================
+   TOGGLER (botão hambúrguer)
+   ========================================================================== */
 
 .navbar-toggler {
     display: none;
@@ -215,7 +232,9 @@ a:hover {
 }
 
 
-/* MENU */
+/* ==========================================================================
+   MENU
+   ========================================================================== */
 
 .navbar-menu {
     display: flex;
@@ -230,7 +249,9 @@ a:hover {
 }
 
 
-/* BUSCA */
+/* ==========================================================================
+   BUSCA
+   ========================================================================== */
 
 .search-form {
     max-width: 250px;
@@ -239,12 +260,10 @@ a:hover {
     align-items: center;
 }
 
-.search-input:focus {
-    border-color: var(--cor-amarelo);
-    box-shadow: none;
-}
-
 .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     color: var(--cor-branco);
@@ -263,16 +282,27 @@ a:hover {
     padding: 0.4rem 1rem;
 }
 
+.search-input:focus {
+    border-color: var(--cor-amarelo);
+    box-shadow: none;
+}
+
 .search-form.active .search-input {
     width: 180px;
     opacity: 1;
-    border-bottom: 2.4px solid var(--cor-amarelo);
     margin-right: 0.6rem;
+    border-bottom: 2.4px solid var(--cor-amarelo);
 }
 
 
+/* ==========================================================================
+   PÁGINA INICIAL (index)
+   ========================================================================== */
 
-/* INDEX */
+.logo-section {
+    background-color: var(--cor-roxo);
+    padding: 1px 20px 40px;
+}
 
 .logo {
     width: 100%;
@@ -282,35 +312,41 @@ a:hover {
     margin: 100px auto 1rem;
 }
 
-.logo-section {
-    background-color: var(--cor-roxo);
-    padding: 1px 20px 40px;
-}
-
 .title {
     text-align: center;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 1rem;
     color: var(--cor-amarelo);
 }
 
 .subtitle {
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0 0 3rem;
     color: var(--cor-roxo);
-    margin-bottom: 3rem;
 }
 
 
-/* SUPERVISÕES E COORDENAÇÕES */
+/* ==========================================================================
+   DESCRIÇÃO (cabeçalho das páginas de listagem: coordenações, supervisões, legados)
+   ========================================================================== */
 
 .descricao {
     text-align: center;
-    padding: 20rem;
-    margin: 20rem;
+    margin: 0;
+    padding: 3rem;
+    background-color: var(--cor-lilas);
+    color: var(--cor-texto);
+}
+
+.descricao h1 {
+    color: var(--cor-roxo);
+    text-decoration: underline;
+    text-decoration-color: var(--cor-amarelo);
 }
 
 
-/* CARDS (listagem de coordenações/supervisões) */
+/* ==========================================================================
+   CARDS (listagem de coordenações/supervisões/legados)
+   ========================================================================== */
 
 .cards-grid {
     display: grid;
@@ -359,11 +395,19 @@ a:hover {
 }
 
 
-/* DETALHE (coordenação ou supervisão individual) */
+/* ==========================================================================
+   DETALHE (coordenação, supervisão ou legado individual)
+   ========================================================================== */
 
 .detalhe-header {
     text-align: center;
     padding: 3rem 1rem 2rem;
+}
+
+.detalhe-header h1 {
+    color: var(--cor-roxo);
+    font-family: "Cinzel", serif;
+    margin-bottom: 1rem;
 }
 
 .detalhe-foto {
@@ -373,16 +417,11 @@ a:hover {
     border-radius: var(--arredondado);
 }
 
-.detalhe-header h1 {
-    color: var(--cor-roxo);
-    font-family: "Cinzel", serif;
-    margin-bottom: 1rem;
-}
-
 .detalhe-significado,
 .detalhe-simbolo,
 .detalhe-base,
-.detalhe-personagem {
+.detalhe-personagem,
+.detalhe-informacoes {
     max-width: 600px;
     margin: 0.5rem auto;
     color: var(--cor-texto);
@@ -407,7 +446,9 @@ a:hover {
 }
 
 
-/* GRID DE LÍDERES / COORDENAÇÕES DENTRO DO DETALHE */
+/* ==========================================================================
+   GRIDS (líderes dentro da coordenação / coordenações dentro da supervisão)
+   ========================================================================== */
 
 .lideres-secao,
 .coordenacoes-secao {
@@ -416,12 +457,13 @@ a:hover {
     padding: 2rem 0 3.8rem;
 }
 
-.lideres-grid, .coordenacoes-grid {
+.lideres-grid,
+.coordenacoes-grid {
     display: grid;
     align-items: center;
-    gap: 1.5rem;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 220px);
+    gap: 1.5rem;
 }
 
 #coordenacoes-grid {
@@ -450,23 +492,9 @@ a:hover {
 }
 
 
-/* LEGADOS */
-
-.descricao {
-    margin: 0;
-    background-color: var(--cor-lilas);
-    padding: 3rem;
-    color: var(--cor-texto);
-}
-
-.descricao h1 {
-    color: var(--cor-roxo);
-    text-decoration: underline;
-    text-decoration-color: var(--cor-amarelo);
-}
-
-
-/* MENSAGEM DE ERRO */
+/* ==========================================================================
+   MENSAGEM DE ERRO
+   ========================================================================== */
 
 .erro {
     text-align: center;
@@ -475,8 +503,9 @@ a:hover {
 }
 
 
-
-/* FOOTER */
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 
 footer {
     background-color: var(--cor-roxo);
@@ -487,37 +516,27 @@ footer {
 }
 
 .contato-lista {
-    list-style: none;
-    padding: 0;
-    margin: 1rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    margin: 1rem;
+    padding: 0;
+    list-style: none;
 }
 
 .social-item {
-    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     line-height: 1;
+    text-decoration: none;
 }
 
-.icon {
-    width: 1.2rem;
-    height: 1.2rem;
-    flex-shrink: 0;
-}
-
+.icon,
 .icon-search {
     width: 1.2rem;
     height: 1.2rem;
-}
-
-.search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-shrink: 0;
 }
 
 .copyright {
@@ -525,8 +544,9 @@ footer {
 }
 
 
-
-/* RESPONSIVO */
+/* ==========================================================================
+   RESPONSIVO
+   ========================================================================== */
 
 @media (max-width: 991px) {
 
