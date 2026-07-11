@@ -447,7 +447,7 @@ mark{
 
 .subtitle {
     text-align: center;
-    margin: 0 0 3rem;
+    margin: 0 3.2rem 3rem;
     color: var(--cor-roxo);
 }
 
@@ -820,6 +820,10 @@ footer {
     .lideres-grid,
     .coordenacoes-grid {
         flex-wrap: wrap;
+    }
+
+    .coordenacoes-grid .card {
+        width: 300px;
     }
 
     .cards-grid {
