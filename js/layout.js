@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //  TEMPLATES (NAVBAR + FOOTER)
   // ==========================================================
 
-const navbar = `
+  const navbar = `
 <header>
   <nav class="navbar">
     <div class="container">
@@ -66,21 +66,11 @@ const navbar = `
           <!-- COORDENAÇÕES -->
           <li class="nav-item">
             <div class="dropdown-wrapper">
-              <a class="nav-link" href="coordenacoes.html">COORDENAÇÕES</a>
+              <a class="nav-link" href="coordenacoes.html">
+                COORDENAÇÕES
+              </a>
               <button class="dropdown-toggle" type="button">▼</button>
-              <ul class="dropdown-menu">
-                <li><a href="coordenacao.html?id=consistent">Consistent</a></li>
-                <li><a href="coordenacao.html?id=fearless">Fearless</a></li>
-                <li><a href="coordenacao.html?id=wise">Wise</a></li>
-                <li><a href="coordenacao.html?id=bloom">Bloom</a></li>
-                <li><a href="coordenacao.html?id=glow">Glow</a></li>
-                <li><a href="coordenacao.html?id=hope">Hope</a></li>
-                <li><a href="coordenacao.html?id=north">North</a></li>
-                <li><a href="coordenacao.html?id=thrive">Thrive</a></li>
-                <li><a href="coordenacao.html?id=aviv">Aviv</a></li>
-                <li><a href="coordenacao.html?id=joyfulness">Joyfulness</a></li>
-                <li><a href="coordenacao.html?id=bright">Bright</a></li>
-              </ul>
+              <ul class="dropdown-menu" id="dropdown-coordenacoes"></ul>
             </div>
           </li>
 
@@ -139,6 +129,8 @@ const navbar = `
 
   document.body.insertAdjacentHTML("afterbegin", navbar);
   document.body.insertAdjacentHTML("beforeend", footer);
+
+  carregarDropdownCoordenacoes();
 
   // ==========================================================
   //  HELPERS DE BUSCA (normalização + extração de detalhe)
@@ -333,6 +325,22 @@ const navbar = `
       const isOpen = menu.classList.toggle("show");
       menuBtn.setAttribute("aria-expanded", isOpen);
     });
+  }
+
+  async function carregarDropdownCoordenacoes() {
+    const dropdown = document.querySelector("#dropdown-coordenacoes");
+    if (!dropdown) return;
+
+    try {
+      const res = await fetch("data/coordenadoras.json");
+      const coordenacoes = await res.json();
+
+      dropdown.innerHTML = coordenacoes
+        .map(c => `<li><a href="coordenacao.html?id=${c.id}">${c.nome}</a></li>`)
+        .join("");
+    } catch (erro) {
+      console.error("Erro ao carregar coordenações no menu:", erro);
+    }
   }
 
 });
