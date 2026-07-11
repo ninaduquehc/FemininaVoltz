@@ -60,6 +60,7 @@ function renderDetalhe(id, supervisoes, coordenacoes, busca) {
   <section class="detalhe-header">
 
     <div class="supervisora-info">
+      <p>Supervisora:</p>
       <img class="supervisora-foto" src="${supervisao.supervisora_foto}" alt="${supervisao.supervisora}">
       <p>${supervisao.supervisora}</p>
     </div>
@@ -89,8 +90,11 @@ function renderDetalhe(id, supervisoes, coordenacoes, busca) {
   </section>
 
   <section class="coordenacoes-secao">
-    <div class="container coordenacoes-grid">
-      ${coordenacoesHtml}
+    <div class="container">
+      <h2 class="secao-titulo">Coordenações</h2>
+      <div class="coordenacoes-grid">
+        ${coordenacoesHtml}
+      </div>
     </div>
   </section>
 `;

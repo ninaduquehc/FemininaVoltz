@@ -9,7 +9,7 @@
     --cor-amarelo: #F1C232;
     --cor-texto: #444;
     --cor-cinza: #666;
-    --navbar-height: 60px;
+    --navbar-height: 50px;
     --arredondado: 12px;
     --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
     --sombra-pesada: 0 6px 16px rgba(0, 0, 0, 0.12);
@@ -534,6 +534,60 @@ mark{
     color: var(--cor-cinza);
 }
 
+/* ==========================================================================
+   SUPERVISORA DA COORDENAÇÃO
+   ========================================================================== */
+
+.detalhe-foto-wrapper {
+    position: relative;
+}
+
+.detalhe-foto-mini {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor-amarelo);
+}
+
+.supervisora-badge-texto {
+    position: absolute;
+    bottom: -28px;
+    left: 210px;
+    font-size: 0.75rem;
+    color: var(--cor-texto);
+    line-height: 1.25;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   COORDENAÇÕES/LÍDERES (título da sessão lilás)
+   ========================================================================== */
+
+.secao-titulo {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: var(--cor-roxo);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.secao-titulo::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto 0;
+    background: var(--cor-amarelo);
+}
 
 /* ==========================================================================
    DETALHE (coordenação, supervisão ou legado individual)
@@ -568,11 +622,10 @@ mark{
 .detalhe-personagem,
 .detalhe-informacoes {
     max-width: 400px;
-    margin: 0.2rem auto;
     color: var(--cor-texto);
     grid-column: 3;
     text-align: left;
-    margin-right: 4rem;
+    margin-right: 0.5rem;
 }
 
 .coordenadora-info,
@@ -584,7 +637,7 @@ mark{
     gap: 0.5rem;
     grid-column: 1;
     grid-row: 1;
-    margin-left: 13rem;
+    margin-left: 10rem;
 }
 
 .coordenadora-foto,
@@ -605,7 +658,7 @@ mark{
 .coordenacoes-secao {
     width: 100%;
     background-color: var(--cor-lilas);
-    padding: 2rem 0 3.8rem;
+    padding: 0rem 0 3.8rem;
 }
 
 .lideres-grid,
