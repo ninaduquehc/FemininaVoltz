@@ -193,14 +193,15 @@ a:hover {
     top: 100%;
     left: 0;
     min-width: 220px;
+    max-height: 350px;
     background: var(--cor-branco);
     border-radius: var(--arredondado);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--sombra);
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     z-index: 999;
-    overflow: hidden;
+    overflow-y: auto;
     transition: 0.2s;
 }
 
