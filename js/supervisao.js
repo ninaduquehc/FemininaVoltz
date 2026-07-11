@@ -21,7 +21,10 @@ function renderLista(supervisoes) {
 
   const html = supervisoes.map(s => `
     <a href="supervisao.html?id=${s.id}" class="card">
-      <img class="card-foto" src="${s.logo}" alt="${s.nome}">
+      <div class="card-foto-wrapper">
+        <img class="card-foto" src="${s.logo}" alt="${s.nome}">
+        <img class="card-foto-mini" src="${s.supervisora_foto}" alt="${s.supervisora}">
+      </div>
       <h3 class="card-titulo">${s.nome}</h3>
       <p class="card-subtitulo">${s.supervisora}</p>
     </a>
@@ -44,7 +47,10 @@ function renderDetalhe(id, supervisoes, coordenacoes, busca) {
 
   const coordenacoesHtml = coordenacoesDaSupervisao.map(c => `
     <a href="coordenacao.html?id=${c.id}" class="card">
-      <img class="card-foto" src="${c.coordenacao_foto}" alt="${c.nome}">
+      <div class="card-foto-wrapper">
+        <img class="card-foto" src="${c.coordenacao_foto}" alt="${c.nome}">
+        <img class="card-foto-mini" src="${c.coordenadora_foto}" alt="${c.coordenadora}">
+      </div>
       <h3 class="card-titulo">${c.nome}</h3>
       <p class="card-subtitulo">${c.coordenadora}</p>
     </a>

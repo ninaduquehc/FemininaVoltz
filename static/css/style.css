@@ -501,6 +501,27 @@ mark{
     border: 3.5px solid var(--cor-amarelo);
 }
 
+.card-foto-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.card-foto-wrapper .card-foto {
+    margin-bottom: 0;
+}
+
+.card-foto-mini {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor-roxo);
+    box-shadow: var(--sombra);
+}
+
 .card-titulo {
     font-size: 1.3rem;
     color: var(--cor-roxo);

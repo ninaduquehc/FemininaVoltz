@@ -17,9 +17,12 @@ function renderLista(legados) {
   const grid = document.querySelector("#legados-grid");
   if (!grid) return;
 
-  const html = legados.map(l => `
+const html = legados.map(l => `
     <a href="legado.html?id=${l.id}" class="card">
-      <img class="card-foto" src="${l.logo}" alt="${l.nome}">
+      <div class="card-foto-wrapper">
+        <img class="card-foto" src="${l.logo}" alt="${l.nome}">
+        <img class="card-foto-mini" src="${l.lider_foto || l.coordenadora_foto}" alt="${l.lider || l.coordenadora}">
+      </div>
       <h3 class="card-titulo">${l.nome}</h3>
       <p class="card-subtitulo">${l.lider || l.coordenadora}</p>
     </a>

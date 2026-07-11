@@ -17,9 +17,12 @@ function renderLista(coordenacoes) {
   const grid = document.querySelector("#coordenacoes-grid");
   if (!grid) return;
 
-  const html = coordenacoes.map(c => `
+const html = coordenacoes.map(c => `
     <a href="coordenacao.html?id=${c.id}" class="card">
-      <img class="card-foto" src="${c.coordenacao_foto}" alt="${c.nome}">
+      <div class="card-foto-wrapper">
+        <img class="card-foto" src="${c.coordenacao_foto}" alt="${c.nome}">
+        <img class="card-foto-mini" src="${c.coordenadora_foto}" alt="${c.coordenadora}">
+      </div>
       <h3 class="card-titulo">${c.nome}</h3>
       <p class="card-subtitulo">${c.coordenadora}</p>
     </a>
