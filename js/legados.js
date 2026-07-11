@@ -45,54 +45,54 @@ function renderDetalhe(id, legados, busca) {
   document.title = `${legado.nome} | Feminina Voltz`;
 
   const html = `
-    <section class="detalhe-header">
+  <section class="detalhe-header">
 
-      <img class="detalhe-foto"
-           src="${legado.logo}"
-           alt="${legado.nome}">
+    <div class="coordenadora-info">
+      <img
+        class="coordenadora-foto"
+        src="${legado.lider_foto}"
+        alt="${legado.lider || legado.coordenadora}"
+      >
 
-      <div class="detalhe-informacoes">
+      <p>${legado.lider || legado.coordenadora}</p>
+    </div>
 
-        <h1>${legado.nome}</h1>
+    <img class="detalhe-foto"
+         src="${legado.logo}"
+         alt="${legado.nome}">
 
-        <p class="detalhe-significado">
-          <strong>Significado:</strong>
-          ${legado.significado}
-        </p>
+    <div class="detalhe-informacoes">
 
-        <p class="detalhe-simbolo">
-          <strong>Símbolo:</strong>
-          ${legado.simbolo}
-        </p>
+      <h1>${legado.nome}</h1>
 
-        <p class="detalhe-base">
-          <strong>Base bíblica:</strong>
-          ${legado.base_biblica}
-        </p>
+      <p class="detalhe-significado">
+        <strong>Significado:</strong>
+        ${legado.significado}
+      </p>
 
-        <p class="detalhe-personagem">
-          <strong>Personagem bíblica:</strong>
-          ${legado.personagem_biblica}
-        </p>
+      <p class="detalhe-simbolo">
+        <strong>Símbolo:</strong>
+        ${legado.simbolo}
+      </p>
 
-        <p>
-          <strong>Informações:</strong>
-          ${legado.informacoes}
-        </p>
+      <p class="detalhe-base">
+        <strong>Base bíblica:</strong>
+        ${legado.base_biblica}
+      </p>
 
-      </div>
+      <p class="detalhe-personagem">
+        <strong>Personagem bíblica:</strong>
+        ${legado.personagem_biblica}
+      </p>
 
-      <div class="coordenadora-info">
-        <img
-          class="coordenadora-foto"
-          src="${legado.lider_foto}"
-          alt="${legado.lider || legado.coordenadora}"
-        >
+      <p>
+        <strong>Informações:</strong>
+        ${legado.informacoes}
+      </p>
 
-        <p>${legado.lider || legado.coordenadora}</p>
-      </div>
+    </div>
 
-    </section>
+  </section>
   `;
 
   document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);

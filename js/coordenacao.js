@@ -53,23 +53,24 @@ function renderDetalhe(id, coordenacoes, supervisoes, busca) {
     </div>
   `).join("");
 
-  const html = `
+const html = `
   <section class="detalhe-header">
 
     <div class="coordenadora-info">
-      <p>Coordenadora:</p>
-      
+      <p>Coordenadora</p>
+
       <div class="detalhe-foto-wrapper">
         <img class="coordenadora-foto" src="${coordenacao.coordenadora_foto}" alt="${coordenacao.coordenadora}">
-
         ${mostrarSupervisora ? `
           <img class="detalhe-foto-mini" src="${supervisao.supervisora_foto}" alt="${supervisao.supervisora}">
-          <span class="supervisora-badge-texto">Supervisora:<br>${supervisao.supervisora}</span>
         ` : ""}
-
       </div>
 
       <p>${coordenacao.coordenadora}</p>
+
+      ${mostrarSupervisora ? `
+        <span class="supervisora-badge-texto">Supervisora:<br>${supervisao.supervisora}</span>
+      ` : ""}
     </div>
 
     <img class="detalhe-foto" src="${coordenacao.coordenacao_foto}" alt="${coordenacao.nome}">

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //  TEMPLATES (NAVBAR + FOOTER)
   // ==========================================================
 
-  const navbar = `
+const navbar = `
 <header>
   <nav class="navbar">
     <div class="container">
@@ -15,33 +15,34 @@ document.addEventListener("DOMContentLoaded", () => {
         Feminina Voltz
       </a>
 
+      <div class="search-wrapper">
+        <form class="search-form">
+
+          <button type="button" class="search-btn">
+            <svg class="icon icon-search"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+
+          <div class="search-box">
+            <input class="search-input" type="search" placeholder="Pesquisar">
+            <button type="button" class="search-clear" aria-label="Limpar pesquisa">✕</button>
+          </div>
+
+          <div class="search-results"></div>
+
+        </form>
+      </div>
+
       <button class="navbar-toggler" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="navbar-menu" id="menu">
-        <div class="search-wrapper">
-          <form class="search-form">
-
-            <button type="button" class="search-btn">
-              <svg class="icon icon-search"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  aria-hidden="true">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-            </button>
-
-            <div class="search-box">
-              <input class="search-input" type="search" placeholder="Pesquisar">
-              <button type="button" class="search-clear" aria-label="Limpar pesquisa">✕</button>
-            </div>
-
-            <div class="search-results"></div>
-
-          </form>
-        </div>
 
         <ul class="navbar-nav">
 

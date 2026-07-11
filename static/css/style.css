@@ -88,6 +88,12 @@ table {
     border-spacing: 0;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 /* ==========================================================================
    LINKS
@@ -249,7 +255,6 @@ a:hover {
 .navbar-menu {
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
 .navbar-nav {
@@ -556,8 +561,8 @@ mark{
 
 .supervisora-badge-texto {
     position: absolute;
-    bottom: -28px;
-    left: 210px;
+    bottom: 0px;
+    left: 255px;
     font-size: 0.75rem;
     color: var(--cor-texto);
     line-height: 1.25;
@@ -631,6 +636,7 @@ mark{
 
 .coordenadora-info,
 .supervisora-info {
+    position: relative;   /* adicione esta linha */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -638,7 +644,7 @@ mark{
     gap: 0.5rem;
     grid-column: 1;
     grid-row: 1;
-    margin-left: 10rem;
+    margin-left: 13rem;
 }
 
 .coordenadora-foto,
@@ -780,4 +786,63 @@ footer {
         width: 100%;
     }
 
+    .detalhe-header {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .detalhe-foto {
+        grid-column: 1;
+        grid-row: auto;
+        margin: 0 auto 1.5rem;
+    }
+
+    .detalhe-significado,
+    .detalhe-simbolo,
+    .detalhe-base,
+    .detalhe-personagem,
+    .detalhe-informacoes {
+        grid-column: 1;
+        max-width: 100%;
+        margin: 0.2rem auto;
+        text-align: left;
+    }
+
+    .coordenadora-info,
+    .supervisora-info {
+        grid-column: 1;
+        grid-row: auto;
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .lideres-grid,
+    .coordenacoes-grid {
+        flex-wrap: wrap;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-wrapper {
+        order: 1;
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        order: 2;
+    }
+
+    .navbar-menu {
+        order: 3;
+    }
+
+    .supervisora-badge-texto {
+        position: static;
+        text-align: center;
+        white-space: normal;
+        margin-top: 0.3rem;
+    }
 }
