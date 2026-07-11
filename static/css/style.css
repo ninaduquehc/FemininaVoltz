@@ -805,8 +805,8 @@ footer {
     .detalhe-informacoes {
         grid-column: 1;
         max-width: 100%;
-        margin: 0.2rem auto;
-        text-align: left;
+        margin: 0.2rem 0.4rem;
+        text-align: center;
     }
 
     .coordenadora-info,
