@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // ==========================================================
+  //  TEMPLATES (NAVBAR + FOOTER)
+  // ==========================================================
+
   const navbar = `
 <header>
   <nav class="navbar">
@@ -16,21 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
       </button>
 
       <div class="navbar-menu" id="menu">
-      <div class="search-wrapper">
-        <form class="search-form">
+        <div class="search-wrapper">
+          <form class="search-form">
 
-          <button type="button" class="search-btn">
-            <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-          </button>
+            <button type="button" class="search-btn">
+              <svg class="icon icon-search"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  aria-hidden="true">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
 
-          <input class="search-input" type="search" placeholder="Pesquisar">
+            <div class="search-box">
+              <input class="search-input" type="search" placeholder="Pesquisar">
+              <button type="button" class="search-clear" aria-label="Limpar pesquisa">✕</button>
+            </div>
 
-          <div class="search-results"></div>
+            <div class="search-results"></div>
 
-        </form>
-      </div>
+          </form>
+        </div>
 
         <ul class="navbar-nav">
 
@@ -40,40 +51,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- SUPERVISÕES -->
           <li class="nav-item">
-
             <div class="dropdown-wrapper">
-
-              <a class="nav-link" href="supervisoes.html">
-                SUPERVISÕES
-              </a>
-
+              <a class="nav-link" href="supervisoes.html">SUPERVISÕES</a>
               <button class="dropdown-toggle" type="button">▼</button>
-
               <ul class="dropdown-menu">
-
                 <li><a href="supervisao.html?id=compass">Compass</a></li>
                 <li><a href="supervisao.html?id=pure">Pure</a></li>
                 <li><a href="supervisao.html?id=rooted">Rooted</a></li>
-
               </ul>
-
             </div>
-
           </li>
 
           <!-- COORDENAÇÕES -->
           <li class="nav-item">
-
             <div class="dropdown-wrapper">
-
-              <a class="nav-link" href="coordenacoes.html">
-                COORDENAÇÕES
-              </a>
-
+              <a class="nav-link" href="coordenacoes.html">COORDENAÇÕES</a>
               <button class="dropdown-toggle" type="button">▼</button>
-
               <ul class="dropdown-menu">
-
                 <li><a href="coordenacao.html?id=consistent">Consistent</a></li>
                 <li><a href="coordenacao.html?id=fearless">Fearless</a></li>
                 <li><a href="coordenacao.html?id=wise">Wise</a></li>
@@ -85,41 +79,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="coordenacao.html?id=aviv">Aviv</a></li>
                 <li><a href="coordenacao.html?id=joyfulness">Joyfulness</a></li>
                 <li><a href="coordenacao.html?id=bright">Bright</a></li>
-
               </ul>
-
             </div>
-
           </li>
 
           <!-- LEGADOS -->
           <li class="nav-item">
-
             <div class="dropdown-wrapper">
-
-              <a class="nav-link" href="legados.html">
-                LEGADOS
-              </a>
-
+              <a class="nav-link" href="legados.html">LEGADOS</a>
               <button class="dropdown-toggle" type="button">▼</button>
-
               <ul class="dropdown-menu">
-
                 <li><a href="legado.html?id=meakness">Meakness</a></li>
                 <li><a href="legado.html?id=bravery">Bravery</a></li>
                 <li><a href="legado.html?id=influence">Influence</a></li>
                 <li><a href="legado.html?id=bright">Bright</a></li>
                 <li><a href="legado.html?id=joyfulness">Joyfulness</a></li>
                 <li><a href="legado.html?id=compass">Compass</a></li>
-
               </ul>
-
             </div>
-
           </li>
 
         </ul>
-
       </div>
 
     </div>
@@ -131,7 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <footer class="footer">
 
   <section id="contato" class="container">
-
     <ul class="contato-lista">
       <li>
         <a href="https://www.youtube.com/@elevevoltz" target="_blank" class="social-item">
@@ -150,18 +129,20 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
       </li>
     </ul>
-
   </section>
 
   <p class="copyright">© 2026 Lideranças Feminina Voltz</p>
 
 </footer>
-  `;
+`;
 
   document.body.insertAdjacentHTML("afterbegin", navbar);
   document.body.insertAdjacentHTML("beforeend", footer);
 
-  // NORMALIZAÇÃO SEARCH
+  // ==========================================================
+  //  HELPERS DE BUSCA (normalização + extração de detalhe)
+  // ==========================================================
+
   function normalizarTexto(texto) {
     return String(texto)
       .normalize("NFD")
@@ -169,101 +150,114 @@ document.addEventListener("DOMContentLoaded", () => {
       .toLowerCase();
   }
 
-  // CONTEXTO SEARCH
-  function encontrarTrecho(objeto, termo) {
-
-    const textoCompleto = JSON.stringify(objeto);
-
-    const textoNormalizado = normalizarTexto(textoCompleto);
-
-    const indice = textoNormalizado.indexOf(termo);
-
-
-    if (indice === -1) {
-      return "";
-    }
-
-
-    const inicio = Math.max(0, indice - 40);
-    const fim = Math.min(textoCompleto.length, indice + termo.length + 60);
-
-
-    return textoCompleto
-      .substring(inicio, fim)
-      .replace(/[{}[\]"]/g, "");
-  }
-
-  // SEARCH NOME
   function encontrarDetalhe(item, termo) {
-
     for (const chave in item) {
-
       const valor = item[chave];
 
-
-      if (typeof valor === "string" &&
-        normalizarTexto(valor).includes(termo)) {
-
+      if (typeof valor === "string" && normalizarTexto(valor).includes(termo)) {
         return `${chave}: ${valor}`;
       }
 
-
       if (Array.isArray(valor)) {
-
         const encontrado = valor.find(obj =>
-          JSON.stringify(obj)
-            .toLowerCase()
-            .includes(termo)
+          JSON.stringify(obj).toLowerCase().includes(termo)
         );
 
-
         if (encontrado) {
-
-          if (encontrado.nome) {
-            return `Líder: ${encontrado.nome}`;
-          }
-
-          return JSON.stringify(encontrado);
+          return encontrado.nome ? `Líder: ${encontrado.nome}` : JSON.stringify(encontrado);
         }
-
       }
-
     }
-
 
     return "";
   }
 
-  // SEARCH TOGGLE
+  function removerDestaque() {
+    const conteudo = document.querySelector("#conteudo");
+    if (!conteudo) return;
+
+    const marks = conteudo.querySelectorAll("mark");
+
+    marks.forEach(mark => {
+      const texto = document.createTextNode(mark.textContent);
+      mark.replaceWith(texto);
+    });
+
+    // junta nós de texto vizinhos que ficaram separados
+    conteudo.normalize();
+
+    // limpa o ?busca= da URL, pra um refresh não re-destacar
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("busca")) {
+      url.searchParams.delete("busca");
+      window.history.replaceState({}, "", url);
+    }
+  }
+
+  // ==========================================================
+  //  TOGGLE DA BARRA DE BUSCA
+  // ==========================================================
+
   const searchForm = document.querySelector(".search-form");
   const searchBtn = document.querySelector(".search-btn");
+  const searchInput = document.querySelector(".search-input");
+  const searchResults = document.querySelector(".search-results");
+  const searchClear = document.querySelector(".search-clear");
 
-  if (searchForm && searchBtn) {
+  if (searchBtn && searchForm && searchInput) {
     searchBtn.addEventListener("click", () => {
       searchForm.classList.toggle("active");
 
       if (searchForm.classList.contains("active")) {
-        searchForm.querySelector("input").focus();
+        searchInput.focus();
       }
     });
   }
 
+  if (searchClear && searchInput && searchResults) {
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      searchResults.innerHTML = "";
+      searchResults.classList.remove("active");
+      searchInput.focus();
 
-  const searchInput = document.querySelector(".search-input");
-  const searchResults = document.querySelector(".search-results");
+      removerDestaque();
+    });
+  }
 
+  // Restaura estado da busca a partir da URL (?busca=)
+  const buscaAtual = new URLSearchParams(window.location.search).get("busca");
+
+  if (buscaAtual && searchInput && searchForm) {
+    searchInput.value = buscaAtual;
+    searchForm.classList.add("active");
+  }
+
+  if (buscaAtual && searchResults) {
+    searchResults.classList.add("active");
+  }
+
+  // Limpa resultados quando o campo de busca nativo é resetado (botão "x" do input search)
+  if (searchInput && searchResults && searchForm) {
+    searchInput.addEventListener("search", () => {
+      if (searchInput.value === "") {
+        searchResults.innerHTML = "";
+        searchResults.classList.remove("active");
+        searchForm.classList.remove("active");
+      }
+    });
+  }
+
+  // ==========================================================
+  //  SUBMIT DA BUSCA
+  // ==========================================================
 
   if (searchForm && searchInput && searchResults) {
-
     searchForm.addEventListener("submit", async (event) => {
       event.preventDefault();
 
-
       const termo = normalizarTexto(searchInput.value.trim());
-
-
       if (!termo) return;
-
 
       const [supervisoras, coordenadoras, legados] = await Promise.all([
         fetch("data/supervisoras.json").then(res => res.json()),
@@ -271,46 +265,32 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("data/legados.json").then(res => res.json())
       ]);
 
-
-
       const resultadosSupervisoras = supervisoras
-        .filter(item =>
-          normalizarTexto(JSON.stringify(item)).includes(termo)
-        )
+        .filter(item => normalizarTexto(JSON.stringify(item)).includes(termo))
         .map(item => ({
           tipo: "Supervisão",
           nome: item.nome,
           detalhe: encontrarDetalhe(item, termo),
-          link: `supervisao.html?id=${item.id}&busca=${termo}`
+          link: `supervisao.html?id=${item.id}&busca=${encodeURIComponent(termo)}`
         }));
 
-
-
       const resultadosCoordenacoes = coordenadoras
-        .filter(item =>
-          normalizarTexto(JSON.stringify(item)).includes(termo)
-        )
+        .filter(item => normalizarTexto(JSON.stringify(item)).includes(termo))
         .map(item => ({
           tipo: "Coordenação",
           nome: item.nome,
           detalhe: encontrarDetalhe(item, termo),
-          link: `coordenacao.html?id=${item.id}&busca=${termo}`
+          link: `coordenacao.html?id=${item.id}&busca=${encodeURIComponent(termo)}`
         }));
 
-
-
       const resultadosLegados = legados
-        .filter(item =>
-          normalizarTexto(JSON.stringify(item)).includes(termo)
-        )
+        .filter(item => normalizarTexto(JSON.stringify(item)).includes(termo))
         .map(item => ({
           tipo: "Legado",
           nome: item.nome,
           detalhe: encontrarDetalhe(item, termo),
-          link: `legado.html?id=${item.id}&busca=${termo}`
+          link: `legado.html?id=${item.id}&busca=${encodeURIComponent(termo)}`
         }));
-
-
 
       const resultados = [
         ...resultadosSupervisoras,
@@ -318,56 +298,32 @@ document.addEventListener("DOMContentLoaded", () => {
         ...resultadosLegados
       ];
 
-
-
-      console.log(resultados);
-
-
-
       searchResults.innerHTML = "";
 
-
-
       if (resultados.length === 0) {
-
-        searchResults.innerHTML = `
-        <p class="search-item">
-          Nenhum resultado encontrado
-        </p>
-      `;
-
+        searchResults.innerHTML = `<p class="search-item">Nenhum resultado encontrado</p>`;
         searchResults.classList.add("active");
-
         return;
       }
 
-
-
       resultados.forEach(resultado => {
-
         searchResults.innerHTML += `
-        <a href="${resultado.link}" class="search-item">
-
-          <strong>${resultado.nome}</strong>
-
-          <span>${resultado.tipo}</span>
-
-          <small>${resultado.detalhe}</small>
-
-        </a>
-      `;
-
+          <a href="${resultado.link}" class="search-item">
+            <strong>${resultado.nome}</strong>
+            <span>${resultado.tipo}</span>
+            <small>${resultado.detalhe}</small>
+          </a>
+        `;
       });
 
-
-
       searchResults.classList.add("active");
-
     });
-
   }
 
-  // MENU MOBILE TOGGLE
+  // ==========================================================
+  //  MENU MOBILE
+  // ==========================================================
+
   const menuBtn = document.querySelector(".navbar-toggler");
   const menu = document.querySelector(".navbar-menu");
 
