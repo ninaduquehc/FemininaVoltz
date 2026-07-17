@@ -53,7 +53,7 @@ function renderDetalhe(id, coordenacoes, supervisoes, busca) {
     </div>
   `).join("");
 
-const html = `
+  const html = `
   <section class="detalhe-header">
 
     <div class="coordenadora-info">
@@ -62,14 +62,16 @@ const html = `
       <div class="detalhe-foto-wrapper">
         <img class="coordenadora-foto" src="${coordenacao.coordenadora_foto}" alt="${coordenacao.coordenadora}">
         ${mostrarSupervisora ? `
-          <img class="detalhe-foto-mini" src="${supervisao.supervisora_foto}" alt="${supervisao.supervisora}">
+          <a href="supervisao.html?id=${supervisao.id}" class="detalhe-foto-mini-link" title="Ver supervisão">
+            <img class="detalhe-foto-mini" src="${supervisao.supervisora_foto}" alt="${supervisao.supervisora}">
+          </a>
         ` : ""}
       </div>
 
       <p>${coordenacao.coordenadora}</p>
 
       ${mostrarSupervisora ? `
-        <span class="supervisora-badge-texto">Supervisora:<br>${supervisao.supervisora}</span>
+        <a href="supervisao.html?id=${supervisao.id}" class="supervisora-badge-texto">Supervisora:<br>${supervisao.supervisora}</a>
       ` : ""}
     </div>
 
@@ -108,6 +110,26 @@ const html = `
 `;
 
   document.querySelector("#conteudo").insertAdjacentHTML("beforeend", html);
+
+  // HOVER CONJUNTO (foto mini + texto da supervisora)
+  // Só roda AGORA, porque só agora esses elementos existem de fato na página
+  const fotoMini = document.querySelector(".detalhe-foto-mini");
+  const textoSupervisora = document.querySelector(".supervisora-badge-texto");
+
+  if (fotoMini && textoSupervisora) {
+    const elementosHover = [fotoMini, textoSupervisora];
+
+    elementosHover.forEach(elemento => {
+      elemento.addEventListener("mouseenter", () => {
+        fotoMini.classList.add("hover-ativo");
+        textoSupervisora.classList.add("hover-ativo");
+      });
+      elemento.addEventListener("mouseleave", () => {
+        fotoMini.classList.remove("hover-ativo");
+        textoSupervisora.classList.remove("hover-ativo");
+      });
+    });
+  }
 
   if (busca) {
     destacarTexto(busca);

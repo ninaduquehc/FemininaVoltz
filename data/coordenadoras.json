@@ -1,5 +1,5 @@
 [
-        {
+    {
         "id": "aviv",
         "nome": "Aviv",
         "significado": "Na Bíblia, Aviv é o tempo da primeira espiga verde, o começo de uma colheita. Não é ainda a abundância final, mas é a promessa de que a colheita virá.",
@@ -12,24 +12,24 @@
         "supervisaoId": "rooted",
         "lideres": [
             {
-                "nome": "Rhaissa Paiva",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/rhaissa.vitoria.paiva.png"
+                "nome": "Ana Vitória Furtunato",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/ana.vitoria.furtunato.png"
             },
             {
                 "nome": "Hadassa Nunes",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/hadassa.peixoto.nunes.png"
             },
             {
-                "nome": "Thauany Miacci",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/thauany.karini.miacci.png"
-            },
-            {
-                "nome": "Ana Vitória Furtunato",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/ana.vitoria.furtunato.png"
-            },
-            {
                 "nome": "Michele Oliveira",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/michele.ferreira.oliveira.png"
+            },
+            {
+                "nome": "Rhaissa Paiva",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/rhaissa.vitoria.paiva.png"
+            },
+            {
+                "nome": "Thauany Miacci",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_AVIV_TIA.GI/thauany.karini.miacci.png"
             },
             {
                 "nome": "Viviane Soléo",
@@ -50,24 +50,24 @@
         "supervisaoId": "rooted",
         "lideres": [
             {
-                "nome": "Vitória Faria",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/vitoria.faria.png"
-            },
-            {
-                "nome": "Raianne Torres",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/raianne.torres.png"
-            },
-            {
-                "nome": "Melise Souza",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/melise.souza.png"
-            },
-            {
                 "nome": "Giovanna Martinelli",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/giovanna.martinelli.png"
             },
             {
                 "nome": "Ingrid Vaisset",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/ingrid.vaisset.png"
+            },
+            {
+                "nome": "Melise Souza",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/melise.souza.png"
+            },
+            {
+                "nome": "Raianne Torres",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/raianne.torres.png"
+            },
+            {
+                "nome": "Vitória Faria",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_BRIGHT_LOREN/vitoria.faria.png"
             }
         ]
     },
@@ -118,12 +118,12 @@
         "supervisaoId": "pure",
         "lideres": [
             {
-                "nome": "Maiza Aimy",
-                "foto": "static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/maiza.aimy.png"
-            },
-            {
                 "nome": "Bianca Tavares",
                 "foto": "static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/bianca.tavares.png"
+            },
+            {
+                "nome": "Maiza Aimy",
+                "foto": "static/imagens/SUPER_PURE_KAT/COOR_CONSISTENT_COLTRIN/maiza.aimy.png"
             },
             {
                 "nome": "Yasmim Lemes",
@@ -170,16 +170,16 @@
         "supervisaoId": "compass",
         "lideres": [
             {
+                "nome": "Lara Anacleto",
+                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/lara.anacleto.png"
+            },
+            {
                 "nome": "Leticia Chaves",
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/leticia.chaves.png"
             },
             {
                 "nome": "Sophia Castilho",
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/sophia.castilho.png"
-            },
-            {
-                "nome": "Lara Anacleto",
-                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_GLOW_ISADORA/lara.anacleto.png"
             }
         ]
     },
@@ -196,16 +196,12 @@
         "supervisaoId": "compass",
         "lideres": [
             {
-                "nome": "Marina Duque",
-                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/marina.duque.png"
-            },
-            {
                 "nome": "Ester Araújo dos Santos",
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/ester.araujo.dos.santos.png"
             },
             {
-                "nome": "Kamily Bedim",
-                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/kamily.bedim.png"
+                "nome": "Marina Duque",
+                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_HOPE_DUDA/marina.duque.png"
             }
         ]
     },
@@ -226,16 +222,16 @@
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/larissa.freitas.png"
             },
             {
-                "nome": "Rafaela Lima",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/rafaela.lima.png"
+                "nome": "Manuela Dutra",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/manuela.dutra.png"
             },
             {
                 "nome": "Maria Eduarda Quintans",
                 "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/maria.eduarda.quintans.png"
             },
             {
-                "nome": "Manuela Dutra",
-                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/manuela.dutra.png"
+                "nome": "Rafaela Lima",
+                "foto": "static/imagens/SUPER_ROOTED_EVE/COOR_JOYFULNESS_BIANCA/rafaela.lima.png"
             }
         ]
     },
@@ -256,12 +252,12 @@
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/arielly.santos.png"
             },
             {
-                "nome": "Rebeca Galvez",
-                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/rebeca.galvez.png"
-            },
-            {
                 "nome": "Maísa Costa",
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/maisa.costa.png"
+            },
+            {
+                "nome": "Rebeca Galvez",
+                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_NORTH_VIC/rebeca.galvez.png"
             }
         ]
     },
@@ -278,16 +274,12 @@
         "supervisaoId": "compass",
         "lideres": [
             {
-                "nome": "Beatriz Munhoes",
-                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/beatriz.munhoes.png"
-            },
-            {
                 "nome": "Beatriz Araújo",
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/beatriz.araujo.png"
             },
             {
-                "nome": "Sofie Moreira",
-                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/sofie.moreira.png"
+                "nome": "Beatriz Munhoes",
+                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/beatriz.munhoes.png"
             },
             {
                 "nome": "Maísa Almeida",
@@ -296,6 +288,10 @@
             {
                 "nome": "Rafaela Geara",
                 "foto": "static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/rafaela.geara.png"
+            },
+            {
+                "nome": "Sofie Moreira",
+                "foto": "static/imagens/SUPER_COMPASS_JU/COOR_THRIVE_BALESTRA/sofie.moreira.png"
             }
         ]
     },
@@ -305,12 +301,16 @@
         "significado": " Sabedoria vinda de Deus para discernir e conduzir.",
         "simbolo": "Lamparina",
         "base_biblica": " “Cessaram as aldeias em Israel, cessaram; até que eu, Débora, me levantei, por mãe em Israel me levantei.''  (Juízes 5:7)",
-        "personagem_biblica":  "Débora — Mulher de sabedoria, autoridade  e ousadia",
+        "personagem_biblica": "Débora — Mulher de sabedoria, autoridade  e ousadia",
         "coordenacao_foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/01_WISE.png",
         "coordenadora": "Letícia Santos",
         "coordenadora_foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/02_LETICIA.SANTOS.png",
         "supervisaoId": "pure",
         "lideres": [
+            {
+                "nome": "Ana Carolina Brisolla",
+                "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/ana.carolina.brisolla.png"
+            },
             {
                 "nome": "Júlia Morotti",
                 "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/julia.morotti.png"
@@ -320,20 +320,16 @@
                 "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/luara.duarte.png"
             },
             {
-                "nome": "Vithoria Areda",
-                "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/vithoria.areda.png"
+                "nome": "Maria Eduarda Azevedo",
+                "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.eduarda.azevedo.png"
             },
             {
                 "nome": "Maria Luiza de Jesus",
                 "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.luiza.de.jesus.png"
             },
             {
-                "nome": "Maria Eduarda Azevedo",
-                "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/maria.eduarda.azevedo.png"
-            },
-            {
-                "nome": "Ana Carolina Brisolla",
-                "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/ana.carolina.brisolla.png"
+                "nome": "Vithoria Areda",
+                "foto": "static/imagens/SUPER_PURE_KAT/COOR_WISE_LETICIA.SANTOS/vithoria.areda.png"
             }
         ]
     }

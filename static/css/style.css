@@ -558,6 +558,12 @@ mark{
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--cor-amarelo);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.detalhe-foto-mini.hover-ativo {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-pesada);
 }
 
 .supervisora-badge-texto {
@@ -569,6 +575,12 @@ mark{
     line-height: 1.25;
     text-align: left;
     white-space: nowrap;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.supervisora-badge-texto.hover-ativo {
+    transform: translateY(-4px);
+    text-shadow: var(--sombra-pesada);
 }
 
 /* ==========================================================================
@@ -798,6 +810,10 @@ footer {
         grid-row: auto;
         margin: 0 auto 1.5rem;
     }
+
+    .detalhe-foto-mini-link {
+    display: contents;
+}
 
     .detalhe-significado,
     .detalhe-simbolo,
